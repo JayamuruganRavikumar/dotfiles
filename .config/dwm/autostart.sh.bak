@@ -1,0 +1,83 @@
+#!/bin/bash
+
+setxkbmap -option caps:swapescape &
+feh --bg-scale ~/Pictures/k9TDJg6.png &
+compton -f &
+
+dte(){
+	dte="$(date +"%A, %B %d - %H:%M")"
+	echo -e " $dte"
+}
+
+bat(){
+	batLap=$1
+	batCount=$2
+	batStatus=`cat /sys/class/power_supply/BAT0/status`
+
+	if [ $batStatus = 'Charging' ]
+	then
+		batIcon=" "
+	else
+		case $batLap in
+			[0-15])
+				batIcon=" "
+				;;
+			[16-25])
+				batIcon=" "
+				;;
+			[26-40])
+				batIcon=" "
+				;;
+			[41-60])
+				batIcon=" "
+				;;
+			[61-84])
+				batIcon=" "
+				;;
+			[85-100])
+				batIcon=" "
+				;;
+			*)
+				batIcon=" "
+				;;
+		esac
+	fi
+
+
+	if [ $batLap -eq 90 ] && [ $batCount -eq 1 ]
+	then
+		zenity --question --title "Battery Status" --text "Battery Full $batLap" 
+		varNotifiy=$?
+	elif [ $batLap -eq 25 ] && [ $batCount -eq 1 ]
+	then
+		zenity --question --title "Battery Status" --text "Battery Low $batLap" 
+		varNotifiy=$?
+	else
+		varNotifiy=1
+	fi
+
+	echo -e "$batIcon$batLap%"
+	return $varNotifiy
+}
+
+vol(){
+	volSP=$(amixer -D pulse sget Master | grep 'Left:' | awk -F'[][]' '{ print $2 }')
+	echo -e "$volSP%"
+
+}
+
+while true; do
+	batLap=`cat /sys/class/power_supply/BAT0/capacity`
+	if [ [ $batLap -eq 90 ] || [ $batLap -eq 25 ] ] && [ [ $varNotifiy -eq 0 ] ]
+	then
+		batCount=0
+	elif [ $batLap -lt 90 ] || [ $batLap -gt 25 ]
+	then
+		batCount=1
+	fi
+
+	xsetroot -name " $(vol) | $(bat $batLap $batCount) | $(dte) "
+	varNotifiy=$?
+	sleep 10s
+
+done &

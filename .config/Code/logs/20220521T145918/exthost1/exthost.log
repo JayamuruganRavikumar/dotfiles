@@ -1,0 +1,30 @@
+[2022-05-21 14:59:19.828] [exthost] [info] Extension host with pid 22806 started
+[2022-05-21 14:59:19.828] [exthost] [info] Skipping acquiring lock for /home/jay/.config/Code/User/workspaceStorage/ad28bfd386a93927997a5adb466972d3.
+[2022-05-21 14:59:19.886] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication, startup: false, activationEvent: 'onAuthenticationRequest:microsoft'
+[2022-05-21 14:59:19.901] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-05-21 14:59:19.903] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
+[2022-05-21 14:59:19.905] [exthost] [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: true, activationEvent: '*'
+[2022-05-21 14:59:19.908] [exthost] [info] ExtensionService#_doActivateExtension dendron.dendron, startup: true, activationEvent: '*'
+[2022-05-21 14:59:20.275] [exthost] [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: true, activationEvent: '*'
+[2022-05-21 14:59:20.396] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-05-21 14:59:20.415] [exthost] [info] Eager extensions activated
+[2022-05-21 14:59:20.418] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-05-21 14:59:20.423] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-05-21 14:59:20.447] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+[2022-05-21 14:59:25.938] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: vscode.github
+[2022-05-21 14:59:34.665] [exthost] [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
+[2022-05-21 14:59:34.679] [exthost] [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+[2022-05-21 14:59:35.091] [exthost] [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+[2022-05-21 15:01:06.395] [exthost] [info] Extension host terminating: renderer closed the socket
+[2022-05-21 15:01:06.681] [exthost] [error] TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 't'
+    |     property '_readableState' -> object with constructor 'M'
+    |     property 'pipes' -> object with constructor 'Array'
+    |     index 0 -> object with constructor 't.ConsoleForElectron'
+    --- property 'parent' closes the circle
+    at JSON.stringify (<anonymous>)
+    at async (/home/jay/.vscode/extensions/vscodevim.vim-1.22.2/src/register/register.ts:357:16)
+    at Object.e.deactivate (/home/jay/.vscode/extensions/vscodevim.vim-1.22.2/extension.ts:64:8)
+    at async Promise.all (index 13)
+    at m._deactivateAll (/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:88:10665)
+[2022-05-21 15:01:06.681] [exthost] [info] Extension host with pid 22806 exiting with code 0

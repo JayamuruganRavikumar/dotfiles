@@ -1,0 +1,160 @@
+{"level":30,"time":1653381067700,"pid":8959,"hostname":"Precision-5530","name":"dendron.server","msg":"83466303689-hjgotouovohj71j7n2mjroe04en9tqnm.apps.googleusercontent.com"}
+{"level":30,"time":1653381067700,"pid":8959,"hostname":"Precision-5530","name":"dendron.server","ctx":"appModule:start","dirPath":"/home/jay/.vscode/extensions/dendron.dendron-0.95.1/dist"}
+{"level":30,"time":1653381067711,"pid":8959,"hostname":"Precision-5530","name":"dendron.server","ctx":"launch","msg":"exit","port":35151,"LOG_DST":"/home/jay/.config/Code/logs/20220524T103103/exthost1/dendron.dendron/dendron.server.log","root":"/home/jay/.vscode/extensions/dendron.dendron-0.95.1/dist"}
+{"level":30,"time":1653381067757,"pid":8959,"hostname":"Precision-5530","name":"dendron.server","ctx":"WorkspaceController:init","msg":"enter","uri":"/home/jay/Documents/wise/Notes/Notes"}
+{"level":30,"time":1653381067763,"pid":8959,"hostname":"Precision-5530","name":"dendron.server","ctx":"FileStorageV2","wsRoot":"/home/jay/Documents/wise/Notes/Notes","vaults":[{"fsPath":"vault"}],"level":"info"}
+{"level":30,"time":1653381067763,"pid":8959,"hostname":"Precision-5530","name":"dendron.server","ctx":"createRenderedCache","msg":"Creating rendered preview cache set to hold maximum of 'undefined' items."}
+{"level":30,"time":1653381067763,"pid":8959,"hostname":"Precision-5530","name":"dendron.server","ctx":"initSchema","msg":"enter"}
+{"level":30,"time":1653381067763,"pid":8959,"hostname":"Precision-5530","name":"dendron.server","ctx":"initSchema","msg":"enter"}
+{"level":30,"time":1653381067768,"pid":8959,"hostname":"Precision-5530","name":"dendron.server","ctx":"initSchema","schemaFiles":["dendron.meet.schema.yml","root.schema.yml"]}
+{"level":30,"time":1653381067768,"pid":8959,"hostname":"Precision-5530","name":"dendron.server","ctx":"parse","msg":"enter","fpaths":["dendron.meet.schema.yml","root.schema.yml"],"vault":{"fsPath":"vault"}}
+{"level":30,"time":1653381067899,"pid":8959,"hostname":"Precision-5530","name":"dendron.server","ctx":"initNotes","msg":"enter"}
+{"level":30,"time":1653381067899,"pid":8959,"hostname":"Precision-5530","name":"dendron.server","ctx":"initNotes","msg":"enter"}
+{"level":30,"time":1653381067909,"pid":8959,"hostname":"Precision-5530","name":"dendron.server","ctx":"parseFile","msg":"enter","vault":{"fsPath":"vault"}}
+{"level":30,"time":1653381067911,"pid":8959,"hostname":"Precision-5530","name":"dendron.server","ctx":"parseFile","msg":"post:parseRootNote"}
+{"level":30,"time":1653381067920,"pid":8959,"hostname":"Precision-5530","name":"dendron.server","ctx":"parseFile","msg":"post:parseDomainNotes"}
+{"level":30,"time":1653381067961,"pid":8959,"hostname":"Precision-5530","name":"dendron.server","ctx":"parseFile","msg":"post:parseAllNotes"}
+{"level":30,"time":1653381067962,"pid":8959,"hostname":"Precision-5530","name":"dendron.server","ctx":"parseFile","msg":"post:matchSchemas"}
+{"level":30,"time":1653381067962,"pid":8959,"hostname":"Precision-5530","name":"dendron.server","ctx":"initNotes","msg":"parseNotes:fin"}
+{"level":30,"time":1653381067963,"pid":8959,"hostname":"Precision-5530","name":"dendron.server","ctx":"initNotes","vault":{"fsPath":"vault"},"numEntries":121,"numCacheUpdates":1}
+{"level":30,"time":1653381067964,"pid":8959,"hostname":"Precision-5530","name":"dendron.server","ctx":"_addBacklinks:ext","duration":0}
+{"level":30,"time":1653381067965,"pid":8959,"hostname":"Precision-5530","name":"dendron.server","ctx":"init:ext","error":null,"storeError":null,"hookErrors":[]}
+{"level":30,"time":1653381067965,"pid":8959,"hostname":"Precision-5530","name":"dendron.server","ctx":"WorkspaceController:init","msg":"finish init","duration":207,"uri":"/home/jay/Documents/wise/Notes/Notes","error":null}
+POST /api/workspace/initialize? 200 210.921 ms - 173765 - 87
+POST /api/note/decorations? 200 11.877 ms - 300 - 512
+{"level":30,"time":1653381069131,"pid":8959,"hostname":"Precision-5530","name":"dendron.server","ctx":"FileStore:writeNote:daily.journal.2022.05.24","msg":"enter","opts":{"updateExisting":false},"note":{"fname":"daily.journal.2022.05.24","id":"rdp51tljvretodb4vsy6r3w","children":[],"vault":{"fsPath":"vault"},"parent":null}}
+{"level":30,"time":1653381069131,"pid":8959,"hostname":"Precision-5530","name":"dendron.server","ctx":"FileStore:writeNote:daily.journal.2022.05.24","msg":"check:existing","maybeNoteId":{}}
+{"level":30,"time":1653381069131,"pid":8959,"hostname":"Precision-5530","name":"dendron.server","ctx":"_writeNewNote","msg":"enter","note":{"fname":"daily.journal.2022.05.24","id":"rdp51tljvretodb4vsy6r3w","children":[],"vault":{"fsPath":"vault"},"parent":null}}
+{"level":30,"time":1653381069131,"pid":8959,"hostname":"Precision-5530","name":"dendron.server","ctx":"_writeNewNote","msg":"exit","changed":[{"fname":"daily.journal.2022.05","id":"ggspdo81v99jn5976svdtv4","children":["yejoqkpq4lxkorpjn7s5465","dqvvpcqfinge6tevdc53vg1","3nhiaoqtmqgevfcgsxznzhg","rdp51tljvretodb4vsy6r3w"],"vault":{"fsPath":"vault"},"parent":"3xRPmL6xiI99ih27xhAUH"}]}
+{"level":30,"time":1653381069131,"pid":8959,"hostname":"Precision-5530","name":"dendron.server","ctx":"FileStore:writeNote:daily.journal.2022.05.24","msg":"pre:note2File"}
+{"level":30,"time":1653381069131,"pid":8959,"hostname":"Precision-5530","name":"dendron.server","ctx":"FileStore:writeNote:daily.journal.2022.05.24","msg":"fin:RunHooks"}
+{"level":30,"time":1653381069138,"pid":8959,"hostname":"Precision-5530","name":"dendron.server","ctx":"FileStore:writeNote:daily.journal.2022.05.24","msg":"pre:updateNotes"}
+{"level":30,"time":1653381069138,"pid":8959,"hostname":"Precision-5530","name":"dendron.server","ctx":"FileStore:writeNote:daily.journal.2022.05.24","msg":"exit"}
+POST /api/note/getByPath? 200 19.663 ms - 1535 - 186
+POST /api/note/decorations? 200 3.817 ms - 300 - 480
+POST /api/note/decorations? 200 14.363 ms - 300 - 484
+POST /api/note/decorations? 200 10.370 ms - 300 - 484
+POST /api/note/decorations? 200 2.586 ms - 300 - 486
+POST /api/note/decorations? 200 4.638 ms - 300 - 488
+POST /api/note/decorations? 200 9.346 ms - 300 - 490
+POST /api/note/decorations? 200 6.611 ms - 300 - 494
+POST /api/note/decorations? 200 11.269 ms - 300 - 494
+POST /api/note/decorations? 200 2.385 ms - 300 - 492
+POST /api/note/decorations? 200 10.345 ms - 300 - 490
+POST /api/note/decorations? 200 3.060 ms - 300 - 494
+POST /api/note/decorations? 200 9.464 ms - 300 - 496
+POST /api/note/decorations? 200 9.621 ms - 300 - 498
+POST /api/note/decorations? 200 2.284 ms - 300 - 502
+POST /api/note/decorations? 200 9.465 ms - 300 - 506
+POST /api/note/decorations? 200 10.226 ms - 300 - 508
+POST /api/note/decorations? 200 11.859 ms - 300 - 510
+POST /api/note/decorations? 200 5.076 ms - 300 - 514
+POST /api/note/decorations? 200 14.582 ms - 300 - 516
+POST /api/note/decorations? 200 10.076 ms - 300 - 518
+POST /api/note/decorations? 200 2.820 ms - 300 - 520
+POST /api/note/decorations? 200 11.774 ms - 300 - 522
+POST /api/note/decorations? 200 10.911 ms - 300 - 524
+POST /api/note/decorations? 200 12.295 ms - 300 - 526
+POST /api/note/decorations? 200 18.633 ms - 300 - 528
+POST /api/note/decorations? 200 10.922 ms - 300 - 530
+POST /api/note/decorations? 200 13.466 ms - 300 - 532
+POST /api/note/decorations? 200 3.261 ms - 300 - 536
+POST /api/note/decorations? 200 18.047 ms - 300 - 540
+POST /api/note/decorations? 200 11.934 ms - 300 - 542
+POST /api/note/decorations? 200 10.866 ms - 300 - 544
+POST /api/note/decorations? 200 3.699 ms - 300 - 546
+POST /api/note/decorations? 200 2.856 ms - 300 - 548
+POST /api/note/decorations? 200 5.337 ms - 300 - 550
+POST /api/note/decorations? 200 23.317 ms - 300 - 552
+POST /api/note/decorations? 200 11.421 ms - 300 - 556
+POST /api/note/decorations? 200 8.604 ms - 300 - 558
+POST /api/note/decorations? 200 13.392 ms - 300 - 560
+POST /api/note/decorations? 200 2.929 ms - 300 - 562
+POST /api/note/decorations? 200 15.028 ms - 300 - 564
+POST /api/note/decorations? 200 13.365 ms - 300 - 566
+POST /api/note/decorations? 200 13.330 ms - 300 - 568
+POST /api/note/decorations? 200 10.974 ms - 300 - 570
+POST /api/note/decorations? 200 11.880 ms - 300 - 572
+POST /api/note/decorations? 200 15.679 ms - 300 - 574
+POST /api/note/decorations? 200 5.502 ms - 300 - 578
+POST /api/note/decorations? 200 10.920 ms - 300 - 580
+POST /api/note/decorations? 200 12.175 ms - 300 - 582
+POST /api/note/decorations? 200 5.688 ms - 300 - 586
+POST /api/note/decorations? 200 15.260 ms - 300 - 588
+POST /api/note/decorations? 200 10.419 ms - 300 - 590
+POST /api/note/decorations? 200 11.690 ms - 300 - 592
+POST /api/note/decorations? 200 14.327 ms - 300 - 596
+POST /api/note/decorations? 200 10.955 ms - 300 - 598
+POST /api/note/decorations? 200 8.426 ms - 300 - 600
+POST /api/note/decorations? 200 11.930 ms - 300 - 602
+POST /api/note/decorations? 200 14.861 ms - 300 - 604
+POST /api/note/decorations? 200 8.998 ms - 300 - 606
+POST /api/note/decorations? 200 12.387 ms - 300 - 608
+POST /api/note/decorations? 200 13.343 ms - 300 - 610
+POST /api/note/decorations? 200 14.063 ms - 300 - 612
+POST /api/note/decorations? 200 3.941 ms - 300 - 614
+POST /api/note/decorations? 200 10.903 ms - 300 - 616
+POST /api/note/decorations? 200 10.222 ms - 300 - 618
+POST /api/note/decorations? 200 8.159 ms - 300 - 622
+POST /api/note/decorations? 200 4.810 ms - 300 - 622
+POST /api/note/decorations? 200 13.461 ms - 300 - 624
+POST /api/note/decorations? 200 12.129 ms - 300 - 626
+POST /api/note/decorations? 200 2.500 ms - 300 - 628
+POST /api/note/decorations? 200 14.424 ms - 300 - 630
+POST /api/note/decorations? 200 10.758 ms - 300 - 632
+POST /api/note/decorations? 200 7.804 ms - 300 - 636
+POST /api/note/decorations? 200 10.899 ms - 300 - 636
+POST /api/note/decorations? 200 11.725 ms - 300 - 638
+POST /api/note/decorations? 200 12.842 ms - 300 - 636
+POST /api/note/decorations? 200 5.170 ms - 300 - 638
+POST /api/note/decorations? 200 2.621 ms - 300 - 640
+POST /api/note/decorations? 200 8.807 ms - 300 - 644
+POST /api/note/decorations? 200 11.120 ms - 300 - 646
+POST /api/note/decorations? 200 13.475 ms - 300 - 648
+POST /api/note/decorations? 200 5.958 ms - 300 - 652
+POST /api/note/decorations? 200 4.937 ms - 300 - 654
+POST /api/note/decorations? 200 13.151 ms - 300 - 652
+POST /api/note/decorations? 200 11.256 ms - 300 - 648
+POST /api/note/decorations? 200 13.882 ms - 300 - 652
+POST /api/note/decorations? 200 14.413 ms - 300 - 654
+POST /api/note/decorations? 200 2.541 ms - 300 - 656
+POST /api/note/decorations? 200 3.635 ms - 300 - 658
+POST /api/note/decorations? 200 12.606 ms - 300 - 662
+POST /api/note/decorations? 200 6.717 ms - 300 - 666
+POST /api/note/decorations? 200 3.365 ms - 300 - 666
+POST /api/note/decorations? 200 14.061 ms - 300 - 668
+POST /api/note/decorations? 200 5.873 ms - 300 - 670
+POST /api/note/decorations? 200 3.255 ms - 300 - 674
+POST /api/note/decorations? 200 15.912 ms - 300 - 676
+POST /api/note/decorations? 200 6.611 ms - 300 - 678
+POST /api/note/decorations? 200 13.093 ms - 300 - 682
+POST /api/note/decorations? 200 3.754 ms - 300 - 684
+POST /api/note/decorations? 200 12.731 ms - 300 - 686
+POST /api/note/decorations? 200 6.205 ms - 300 - 690
+POST /api/note/decorations? 200 15.063 ms - 300 - 690
+POST /api/note/decorations? 200 13.152 ms - 300 - 692
+POST /api/note/decorations? 200 8.441 ms - 300 - 696
+POST /api/note/decorations? 200 15.455 ms - 300 - 696
+POST /api/note/decorations? 200 10.865 ms - 300 - 700
+POST /api/note/decorations? 200 13.252 ms - 300 - 700
+POST /api/note/decorations? 200 15.366 ms - 300 - 702
+POST /api/note/decorations? 200 12.537 ms - 300 - 704
+POST /api/note/decorations? 200 12.748 ms - 300 - 708
+POST /api/note/decorations? 200 11.524 ms - 300 - 708
+POST /api/note/decorations? 200 5.763 ms - 300 - 710
+POST /api/note/decorations? 200 12.384 ms - 300 - 712
+POST /api/note/decorations? 200 3.811 ms - 300 - 716
+POST /api/note/decorations? 200 12.057 ms - 300 - 718
+POST /api/note/decorations? 200 3.987 ms - 300 - 720
+POST /api/note/decorations? 200 13.768 ms - 300 - 724
+POST /api/note/decorations? 200 3.231 ms - 300 - 726
+POST /api/note/decorations? 200 2.761 ms - 300 - 728
+POST /api/note/decorations? 200 3.728 ms - 300 - 730
+POST /api/note/decorations? 200 16.218 ms - 300 - 732
+POST /api/note/decorations? 200 9.347 ms - 300 - 734
+POST /api/note/links? 200 2.020 ms - 24 - 567
+POST /api/note/anchors? 200 3.445 ms - 108 - 506
+POST /api/note/getByPath? 200 0.635 ms - 368 - 127
+POST /api/note/update? 200 0.768 ms - 603 - 634
+POST /api/note/decorations? 200 2.632 ms - 300 - 512
+POST /api/note/decorations? 200 2.700 ms - 300 - 606

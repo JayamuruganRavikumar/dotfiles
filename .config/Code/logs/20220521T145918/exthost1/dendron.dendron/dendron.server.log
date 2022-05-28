@@ -1,0 +1,52 @@
+{"level":30,"time":1653137961035,"pid":22863,"hostname":"Precision-5530","name":"dendron.server","msg":"83466303689-hjgotouovohj71j7n2mjroe04en9tqnm.apps.googleusercontent.com"}
+{"level":30,"time":1653137961035,"pid":22863,"hostname":"Precision-5530","name":"dendron.server","ctx":"appModule:start","dirPath":"/home/jay/.vscode/extensions/dendron.dendron-0.95.1/dist"}
+{"level":30,"time":1653137961045,"pid":22863,"hostname":"Precision-5530","name":"dendron.server","ctx":"launch","msg":"exit","port":43307,"LOG_DST":"/home/jay/.config/Code/logs/20220521T145918/exthost1/dendron.dendron/dendron.server.log","root":"/home/jay/.vscode/extensions/dendron.dendron-0.95.1/dist"}
+{"level":30,"time":1653137961092,"pid":22863,"hostname":"Precision-5530","name":"dendron.server","ctx":"WorkspaceController:init","msg":"enter","uri":"/home/jay/Documents/wise/Notes/Notes"}
+{"level":30,"time":1653137961097,"pid":22863,"hostname":"Precision-5530","name":"dendron.server","ctx":"FileStorageV2","wsRoot":"/home/jay/Documents/wise/Notes/Notes","vaults":[{"fsPath":"vault"}],"level":"info"}
+{"level":30,"time":1653137961097,"pid":22863,"hostname":"Precision-5530","name":"dendron.server","ctx":"createRenderedCache","msg":"Creating rendered preview cache set to hold maximum of 'undefined' items."}
+{"level":30,"time":1653137961098,"pid":22863,"hostname":"Precision-5530","name":"dendron.server","ctx":"initSchema","msg":"enter"}
+{"level":30,"time":1653137961098,"pid":22863,"hostname":"Precision-5530","name":"dendron.server","ctx":"initSchema","msg":"enter"}
+{"level":30,"time":1653137961103,"pid":22863,"hostname":"Precision-5530","name":"dendron.server","ctx":"initSchema","schemaFiles":["dendron.meet.schema.yml","root.schema.yml"]}
+{"level":30,"time":1653137961103,"pid":22863,"hostname":"Precision-5530","name":"dendron.server","ctx":"parse","msg":"enter","fpaths":["dendron.meet.schema.yml","root.schema.yml"],"vault":{"fsPath":"vault"}}
+{"level":30,"time":1653137961227,"pid":22863,"hostname":"Precision-5530","name":"dendron.server","ctx":"initNotes","msg":"enter"}
+{"level":30,"time":1653137961227,"pid":22863,"hostname":"Precision-5530","name":"dendron.server","ctx":"initNotes","msg":"enter"}
+{"level":30,"time":1653137961237,"pid":22863,"hostname":"Precision-5530","name":"dendron.server","ctx":"parseFile","msg":"enter","vault":{"fsPath":"vault"}}
+{"level":30,"time":1653137961241,"pid":22863,"hostname":"Precision-5530","name":"dendron.server","ctx":"parseFile","msg":"post:parseRootNote"}
+{"level":30,"time":1653137961281,"pid":22863,"hostname":"Precision-5530","name":"dendron.server","ctx":"parseFile","msg":"post:parseDomainNotes"}
+{"level":30,"time":1653137961309,"pid":22863,"hostname":"Precision-5530","name":"dendron.server","ctx":"parseFile","msg":"post:parseAllNotes"}
+{"level":30,"time":1653137961311,"pid":22863,"hostname":"Precision-5530","name":"dendron.server","ctx":"parseFile","msg":"post:matchSchemas"}
+{"level":30,"time":1653137961311,"pid":22863,"hostname":"Precision-5530","name":"dendron.server","ctx":"initNotes","msg":"parseNotes:fin"}
+{"level":30,"time":1653137961311,"pid":22863,"hostname":"Precision-5530","name":"dendron.server","ctx":"initNotes","vault":{"fsPath":"vault"},"numEntries":119,"numCacheUpdates":5}
+{"level":30,"time":1653137961312,"pid":22863,"hostname":"Precision-5530","name":"dendron.server","ctx":"_addBacklinks:ext","duration":0}
+{"level":30,"time":1653137961313,"pid":22863,"hostname":"Precision-5530","name":"dendron.server","ctx":"init:ext","error":null,"storeError":null,"hookErrors":[]}
+{"level":30,"time":1653137961313,"pid":22863,"hostname":"Precision-5530","name":"dendron.server","ctx":"WorkspaceController:init","msg":"finish init","duration":220,"uri":"/home/jay/Documents/wise/Notes/Notes","error":null}
+POST /api/workspace/initialize? 200 224.319 ms - 172669 - 87
+{"level":30,"time":1653137974501,"pid":22863,"hostname":"Precision-5530","name":"dendron.server","ctx":"FileStore:writeNote:daily.journal.2022.05.21","msg":"enter","opts":{"updateExisting":false},"note":{"fname":"daily.journal.2022.05.21","id":"dqvvpcqfinge6tevdc53vg1","children":[],"vault":{"fsPath":"vault"},"parent":null}}
+{"level":30,"time":1653137974502,"pid":22863,"hostname":"Precision-5530","name":"dendron.server","ctx":"FileStore:writeNote:daily.journal.2022.05.21","msg":"check:existing","maybeNoteId":{}}
+{"level":30,"time":1653137974502,"pid":22863,"hostname":"Precision-5530","name":"dendron.server","ctx":"_writeNewNote","msg":"enter","note":{"fname":"daily.journal.2022.05.21","id":"dqvvpcqfinge6tevdc53vg1","children":[],"vault":{"fsPath":"vault"},"parent":null}}
+{"level":30,"time":1653137974502,"pid":22863,"hostname":"Precision-5530","name":"dendron.server","ctx":"_writeNewNote","msg":"exit","changed":[{"fname":"daily.journal.2022.05","id":"94of03siw7mf3b1tf6frm4l","children":["yejoqkpq4lxkorpjn7s5465","dqvvpcqfinge6tevdc53vg1"],"vault":{"fsPath":"vault"},"parent":"3xRPmL6xiI99ih27xhAUH"}]}
+{"level":30,"time":1653137974502,"pid":22863,"hostname":"Precision-5530","name":"dendron.server","ctx":"FileStore:writeNote:daily.journal.2022.05.21","msg":"pre:note2File"}
+{"level":30,"time":1653137974502,"pid":22863,"hostname":"Precision-5530","name":"dendron.server","ctx":"FileStore:writeNote:daily.journal.2022.05.21","msg":"fin:RunHooks"}
+{"level":30,"time":1653137974509,"pid":22863,"hostname":"Precision-5530","name":"dendron.server","ctx":"FileStore:writeNote:daily.journal.2022.05.21","msg":"pre:updateNotes"}
+{"level":30,"time":1653137974509,"pid":22863,"hostname":"Precision-5530","name":"dendron.server","ctx":"FileStore:writeNote:daily.journal.2022.05.21","msg":"exit"}
+POST /api/note/getByPath? 200 19.510 ms - 1431 - 186
+POST /api/note/decorations? 200 14.148 ms - 300 - 480
+POST /api/note/decorations? 200 8.400 ms - 300 - 484
+POST /api/note/decorations? 200 12.007 ms - 300 - 484
+POST /api/note/decorations? 200 3.141 ms - 300 - 486
+POST /api/note/decorations? 200 10.065 ms - 300 - 488
+POST /api/note/decorations? 200 10.544 ms - 300 - 490
+POST /api/note/decorations? 200 12.072 ms - 300 - 494
+POST /api/note/decorations? 200 10.866 ms - 300 - 496
+POST /api/note/decorations? 200 12.184 ms - 300 - 494
+POST /api/note/decorations? 200 11.407 ms - 300 - 492
+POST /api/note/decorations? 200 10.699 ms - 300 - 494
+POST /api/note/decorations? 200 10.090 ms - 300 - 496
+POST /api/note/decorations? 200 9.712 ms - 300 - 498
+POST /api/note/decorations? 200 10.168 ms - 300 - 500
+POST /api/note/decorations? 200 10.920 ms - 300 - 504
+POST /api/note/decorations? 200 4.207 ms - 300 - 508
+POST /api/note/links? 200 3.012 ms - 24 - 454
+POST /api/note/anchors? 200 1.278 ms - 111 - 393
+POST /api/note/getByPath? 200 0.574 ms - 368 - 127
+POST /api/note/update? 200 0.727 ms - 493 - 524

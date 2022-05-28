@@ -1,0 +1,4 @@
+[2022-05-18 21:32:16.127] [renderer1] [error] RequestService#request (browser) - error https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery {"name":"Canceled"}
+[2022-05-18 21:32:25.109] [renderer1] [error] [Extension Host] (node:13792) [PINODEP007] PinoWarning: bindings.level is deprecated, use options.level option instead
+(Use `code --trace-warnings ...` to show where the warning was created)
+[2022-05-18 21:33:13.044] [renderer1] [error] ENOENT: no such file or directory, open '/home/jay/.config/Code/User/globalStorage/vscodevim.vim/.registers': Error: ENOENT: no such file or directory, open '/home/jay/.config/Code/User/globalStorage/vscodevim.vim/.registers'

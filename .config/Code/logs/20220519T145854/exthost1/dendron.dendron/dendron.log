@@ -1,0 +1,11 @@
+{"level":30,"time":1652965136167,"pid":3232,"hostname":"Precision-5530","name":"dendron","ctx":"Logger:configure","msg":"exit","logLevel":"info"}
+{"level":30,"time":1652965136213,"pid":3232,"hostname":"Precision-5530","name":"dendron","ctx":"_activate","stage":"prod","isDebug":false,"logLevel":"info","logPath":"/home/jay/.config/Code/logs/20220519T145854/exthost1/dendron.dendron","extensionPath":"/home/jay/.vscode/extensions/dendron.dendron-0.95.1","extensionUri":"/home/jay/.vscode/extensions/dendron.dendron-0.95.1"}
+{"level":30,"time":1652965136233,"pid":3232,"hostname":"Precision-5530","name":"SegmentClient","msg":"No cache path for Segment specified. Failed event uploads will not be retried."}
+{"level":30,"time":1652965136234,"pid":3232,"hostname":"Precision-5530","name":"SegmentClient","msg":"user telemetry setting: enabled by config"}
+{"level":30,"time":1652965136234,"pid":3232,"hostname":"Precision-5530","name":"SegmentClient","msg":"telemetry initializing"}
+{"level":30,"time":1652965136234,"pid":3232,"hostname":"Precision-5530","name":"SegmentClient","msg":"using existing id"}
+{"level":30,"time":1652965136234,"pid":3232,"hostname":"Precision-5530","name":"SegmentClient","msg":"anonymous id","anonymousId":"uts228j4w0ohtgh9r11lk8r"}
+{"level":30,"time":1652965136238,"pid":3232,"hostname":"Precision-5530","name":"dendron","ctx":"DendronExtension","msg":"initialized"}
+{"level":30,"time":1652965136263,"pid":3232,"hostname":"Precision-5530","name":"dendron","ctx":"_activate","msg":"initializeWorkspace","wsType":"NONE","currentVersion":"0.95.1","previousGlobalVersion":"0.95.1","extensionInstallStatus":"NO_CHANGE"}
+{"level":30,"time":1652965136263,"pid":3232,"hostname":"Precision-5530","name":"dendron","ctx":"_activate","msg":"dendron not active"}
+{"level":30,"time":1652965136264,"pid":3232,"hostname":"Precision-5530","name":"dendron","ctx":"showWelcomeOrWhatsNew","version":"0.95.1","previousExtensionVersion":"0.0.0"}

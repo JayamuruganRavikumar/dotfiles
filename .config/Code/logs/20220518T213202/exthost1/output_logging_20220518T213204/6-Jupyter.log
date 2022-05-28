@@ -1,0 +1,12 @@
+Visual Studio Code (1.67.2, undefined, desktop)
+Jupyter Extension Version: 2022.4.1021342353.
+Python Extension not installed.
+No workspace folder opened.
+info 21:33:42.438: ZMQ install verified.
+info 21:36:31.387: Shutting down notebooks for ef88beb5-fa93-4a38-afc7-06cd85766ecc
+info 21:36:31.387: Disposing HostJupyterExecution c6149192-07e4-49f0-8912-a61bfa63a866
+info 21:36:31.387: Disposing super HostJupyterExecution c6149192-07e4-49f0-8912-a61bfa63a866
+info 21:36:31.387: Disposing HostJupyterExecution c6149192-07e4-49f0-8912-a61bfa63a866
+info 21:36:31.387: Finished disposing HostJupyterExecution  c6149192-07e4-49f0-8912-a61bfa63a866
+info 21:36:31.391: Cleaning up server cache c6149192-07e4-49f0-8912-a61bfa63a866
+info 21:36:31.391: Finished disposing HostJupyterExecution  c6149192-07e4-49f0-8912-a61bfa63a866

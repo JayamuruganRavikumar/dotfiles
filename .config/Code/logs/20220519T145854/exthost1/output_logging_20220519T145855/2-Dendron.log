@@ -1,0 +1,6 @@
+info: {"ctx":"Logger:configure","msg":"exit","logLevel":"info"}
+info: {"ctx":"_activate","stage":"prod","isDebug":false,"logLevel":"info","logPath":"/home/jay/.config/Code/logs/20220519T145854/exthost1/dendron.dendron","extensionPath":"/home/jay/.vscode/extensions/dendron.dendron-0.95.1","extensionUri":"/home/jay/.vscode/extensions/dendron.dendron-0.95.1"}
+info: {"ctx":"DendronExtension","msg":"initialized"}
+info: {"ctx":"_activate","msg":"initializeWorkspace","wsType":"NONE","currentVersion":"0.95.1","previousGlobalVersion":"0.95.1","extensionInstallStatus":"NO_CHANGE"}
+info: {"ctx":"_activate","msg":"dendron not active"}
+info: {"ctx":"showWelcomeOrWhatsNew","version":"0.95.1","previousExtensionVersion":"0.0.0"}

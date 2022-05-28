@@ -1,0 +1,12 @@
+{"level":30,"time":1652902344987,"pid":13792,"hostname":"Precision-5530","name":"dendron","ctx":"Logger:configure","msg":"exit","logLevel":"info"}
+{"level":30,"time":1652902345106,"pid":13792,"hostname":"Precision-5530","name":"dendron","ctx":"_activate","stage":"prod","isDebug":false,"logLevel":"info","logPath":"/home/jay/.config/Code/logs/20220518T213202/exthost1/dendron.dendron","extensionPath":"/home/jay/.vscode/extensions/dendron.dendron-0.95.1","extensionUri":"/home/jay/.vscode/extensions/dendron.dendron-0.95.1"}
+{"level":30,"time":1652902345108,"pid":13792,"hostname":"Precision-5530","name":"SegmentClient","msg":"No cache path for Segment specified. Failed event uploads will not be retried."}
+{"level":30,"time":1652902345108,"pid":13792,"hostname":"Precision-5530","name":"SegmentClient","msg":"user telemetry setting: enabled by config"}
+{"level":30,"time":1652902345108,"pid":13792,"hostname":"Precision-5530","name":"SegmentClient","msg":"telemetry initializing"}
+{"level":30,"time":1652902345108,"pid":13792,"hostname":"Precision-5530","name":"SegmentClient","msg":"creating new id"}
+{"level":30,"time":1652902345109,"pid":13792,"hostname":"Precision-5530","name":"SegmentClient","msg":"anonymous id","anonymousId":"uts228j4w0ohtgh9r11lk8r"}
+{"level":30,"time":1652902345114,"pid":13792,"hostname":"Precision-5530","name":"dendron","ctx":"DendronExtension","msg":"initialized"}
+{"level":30,"time":1652902345134,"pid":13792,"hostname":"Precision-5530","name":"dendron","ctx":"_activate","msg":"initializeWorkspace","wsType":"NONE","currentVersion":"0.95.1","previousGlobalVersion":"0.0.0","extensionInstallStatus":"INITIAL_INSTALL"}
+{"level":30,"time":1652902345134,"pid":13792,"hostname":"Precision-5530","name":"dendron","ctx":"_activate","msg":"dendron not active"}
+{"level":30,"time":1652902345139,"pid":13792,"hostname":"Precision-5530","name":"dendron","ctx":"showWelcomeOrWhatsNew","version":"0.95.1","previousExtensionVersion":"0.0.0"}
+{"level":30,"time":1652902345139,"pid":13792,"hostname":"Precision-5530","name":"dendron","ctx":"showWelcomeOrWhatsNew","msg":"extension, secondary install on new vscode instance"}

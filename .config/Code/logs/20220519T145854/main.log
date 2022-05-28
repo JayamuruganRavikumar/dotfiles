@@ -1,0 +1,8 @@
+[2022-05-19 14:58:54.316] [main] [info] window#load: attempt to load window (id: 1)
+[2022-05-19 14:58:54.326] [main] [info] update#setState idle
+[2022-05-19 14:58:54.389] [main] [info] ExtensionHostStarterWorker created
+[2022-05-19 14:58:55.054] [main] [info] window#load: window reported ready (id: 1)
+[2022-05-19 14:58:55.258] [main] [info] Starting extension host with pid 3232 (fork() took 8 ms).
+[2022-05-19 14:58:55.259] [main] [info] ExtensionHostStarterWorker.start() took 17 ms.
+[2022-05-19 14:59:23.987] [main] [info] Waiting for extension host with pid 3232 to exit.
+[2022-05-19 14:59:24.028] [main] [info] Extension host with pid 3232 exited with code: 0, signal: null.

@@ -1,0 +1,50 @@
+[2022-05-18 21:32:05.129] [sharedprocess] [info] Starting worker process with pid 13852 (type: fileWatcher, window: 1).
+[2022-05-18 21:32:19.354] [sharedprocess] [info] Getting Manifest... dendron.dendron
+[2022-05-18 21:32:19.359] [sharedprocess] [info] Installing extension: dendron.dendron
+[2022-05-18 21:32:19.623] [sharedprocess] [info] Getting Manifest... dendron.dendron-paste-image
+[2022-05-18 21:32:20.329] [sharedprocess] [info] Installing extension: dendron.dendron-paste-image
+[2022-05-18 21:32:22.007] [sharedprocess] [info] Downloaded extension: dendron.dendron-paste-image /home/jay/.config/Code/CachedExtensionVSIXs/dendron.dendron-paste-image-1.1.0
+[2022-05-18 21:32:22.419] [sharedprocess] [info] Extracted extension to /home/jay/.vscode/extensions/.5610db2c-72e3-4b19-8c4c-1fd35dfc4e7b: dendron.dendron-paste-image
+[2022-05-18 21:32:22.427] [sharedprocess] [info] Renamed to /home/jay/.vscode/extensions/dendron.dendron-paste-image-1.1.0
+[2022-05-18 21:32:22.428] [sharedprocess] [info] Extracting completed. dendron.dendron-paste-image
+[2022-05-18 21:32:24.019] [sharedprocess] [info] Downloaded extension: dendron.dendron /home/jay/.config/Code/CachedExtensionVSIXs/dendron.dendron-0.95.1
+[2022-05-18 21:32:24.294] [sharedprocess] [info] Extracted extension to /home/jay/.vscode/extensions/.d2bd6870-1474-4db9-835a-54b7cce45d49: dendron.dendron
+[2022-05-18 21:32:24.302] [sharedprocess] [info] Renamed to /home/jay/.vscode/extensions/dendron.dendron-0.95.1
+[2022-05-18 21:32:24.304] [sharedprocess] [info] Extracting completed. dendron.dendron
+[2022-05-18 21:32:24.306] [sharedprocess] [info] Extension installed successfully: dendron.dendron-paste-image
+[2022-05-18 21:32:24.306] [sharedprocess] [info] Extension installed successfully: dendron.dendron
+[2022-05-18 21:32:26.791] [sharedprocess] [info] Getting Manifest... jdinhlife.gruvbox
+[2022-05-18 21:32:26.796] [sharedprocess] [info] Installing extension: jdinhlife.gruvbox
+[2022-05-18 21:32:28.410] [sharedprocess] [info] Downloaded extension: jdinhlife.gruvbox /home/jay/.config/Code/CachedExtensionVSIXs/jdinhlife.gruvbox-1.5.1
+[2022-05-18 21:32:28.460] [sharedprocess] [info] Extracted extension to /home/jay/.vscode/extensions/.01c95a7e-ba1e-43df-b995-59ecab19f126: jdinhlife.gruvbox
+[2022-05-18 21:32:28.464] [sharedprocess] [info] Renamed to /home/jay/.vscode/extensions/jdinhlife.gruvbox-1.5.1
+[2022-05-18 21:32:28.466] [sharedprocess] [info] Extracting completed. jdinhlife.gruvbox
+[2022-05-18 21:32:28.466] [sharedprocess] [info] Extension installed successfully: jdinhlife.gruvbox
+[2022-05-18 21:33:10.220] [sharedprocess] [info] Getting Manifest... vscodevim.vim
+[2022-05-18 21:33:10.225] [sharedprocess] [info] Installing extension: vscodevim.vim
+[2022-05-18 21:33:11.699] [sharedprocess] [info] Downloaded extension: vscodevim.vim /home/jay/.config/Code/CachedExtensionVSIXs/vscodevim.vim-1.22.2
+[2022-05-18 21:33:11.805] [sharedprocess] [info] Extracted extension to /home/jay/.vscode/extensions/.a7a63cec-6ea1-4851-b18d-0b0aab7381f6: vscodevim.vim
+[2022-05-18 21:33:11.813] [sharedprocess] [info] Renamed to /home/jay/.vscode/extensions/vscodevim.vim-1.22.2
+[2022-05-18 21:33:11.815] [sharedprocess] [info] Extracting completed. vscodevim.vim
+[2022-05-18 21:33:11.816] [sharedprocess] [info] Extension installed successfully: vscodevim.vim
+[2022-05-18 21:33:35.245] [sharedprocess] [info] Getting Manifest... ms-toolsai.jupyter
+[2022-05-18 21:33:35.256] [sharedprocess] [info] Installing extension: ms-toolsai.jupyter
+[2022-05-18 21:33:35.803] [sharedprocess] [info] Getting Manifest... ms-toolsai.jupyter-keymap
+[2022-05-18 21:33:36.381] [sharedprocess] [info] Getting Manifest... ms-toolsai.jupyter-renderers
+[2022-05-18 21:33:37.060] [sharedprocess] [info] Installing extension: ms-toolsai.jupyter-keymap
+[2022-05-18 21:33:37.060] [sharedprocess] [info] Installing extension: ms-toolsai.jupyter-renderers
+[2022-05-18 21:33:38.355] [sharedprocess] [info] Downloaded extension: ms-toolsai.jupyter-keymap /home/jay/.config/Code/CachedExtensionVSIXs/ms-toolsai.jupyter-keymap-1.0.0
+[2022-05-18 21:33:38.388] [sharedprocess] [info] Extracted extension to /home/jay/.vscode/extensions/.3eb126d1-291a-49f6-a898-5536985e06b1: ms-toolsai.jupyter-keymap
+[2022-05-18 21:33:38.396] [sharedprocess] [info] Renamed to /home/jay/.vscode/extensions/ms-toolsai.jupyter-keymap-1.0.0
+[2022-05-18 21:33:38.399] [sharedprocess] [info] Extracting completed. ms-toolsai.jupyter-keymap
+[2022-05-18 21:33:38.902] [sharedprocess] [info] Downloaded extension: ms-toolsai.jupyter-renderers /home/jay/.config/Code/CachedExtensionVSIXs/ms-toolsai.jupyter-renderers-1.0.6
+[2022-05-18 21:33:39.036] [sharedprocess] [info] Extracted extension to /home/jay/.vscode/extensions/.30ab9385-e6a2-468c-9e7f-8991f4c2fad8: ms-toolsai.jupyter-renderers
+[2022-05-18 21:33:39.042] [sharedprocess] [info] Renamed to /home/jay/.vscode/extensions/ms-toolsai.jupyter-renderers-1.0.6
+[2022-05-18 21:33:39.043] [sharedprocess] [info] Extracting completed. ms-toolsai.jupyter-renderers
+[2022-05-18 21:33:41.154] [sharedprocess] [info] Downloaded extension: ms-toolsai.jupyter /home/jay/.config/Code/CachedExtensionVSIXs/ms-toolsai.jupyter-2022.4.1021342353
+[2022-05-18 21:33:41.846] [sharedprocess] [info] Extracted extension to /home/jay/.vscode/extensions/.6f838dd0-4d1e-42a9-a2f3-5f2dffdd05a3: ms-toolsai.jupyter
+[2022-05-18 21:33:41.859] [sharedprocess] [info] Renamed to /home/jay/.vscode/extensions/ms-toolsai.jupyter-2022.4.1021342353
+[2022-05-18 21:33:41.865] [sharedprocess] [info] Extracting completed. ms-toolsai.jupyter
+[2022-05-18 21:33:41.868] [sharedprocess] [info] Extension installed successfully: ms-toolsai.jupyter-keymap
+[2022-05-18 21:33:41.868] [sharedprocess] [info] Extension installed successfully: ms-toolsai.jupyter-renderers
+[2022-05-18 21:33:41.868] [sharedprocess] [info] Extension installed successfully: ms-toolsai.jupyter

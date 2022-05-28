@@ -1,0 +1,116 @@
+info: {"ctx":"Logger:configure","msg":"exit","logLevel":"info"}
+info: {"ctx":"_activate","stage":"prod","isDebug":false,"logLevel":"info","logPath":"/home/jay/.config/Code/logs/20220521T145918/exthost1/dendron.dendron","extensionPath":"/home/jay/.vscode/extensions/dendron.dendron-0.95.1","extensionUri":"/home/jay/.vscode/extensions/dendron.dendron-0.95.1","workspaceFolders":["/home/jay/Documents/wise/Notes/Notes"]}
+info: {"ctx":"DendronExtension","msg":"initialized"}
+info: {"ctx":"_activate","msg":"initializeWorkspace","wsType":"NATIVE","currentVersion":"0.95.1","previousGlobalVersion":"0.95.1","extensionInstallStatus":"NO_CHANGE"}
+info: {"msg":"Telemetry is disabled? false"}
+info: {"msg":"Segment Residual Cache Path is at /home/jay/.config/Code/User/globalStorage/dendron.dendron/segmentresidualcache.log"}
+info: {"ctx":"runMigrationsIfNecessary","changes":[],"workspaceInstallStatus":"UPGRADED"}
+info: {"ctx":"_activate","platform":"linux","extensions":[{"id":"dendron.dendron","version":"0.95.1","active":true},{"id":"dendron.dendron-paste-image"},{"id":"dendron.dendron-markdown-shortcuts"},{"id":"redhat.vscode-yaml"}],"vaults":[{"fsPath":"vault"}]}
+info: {"ctx":"WSUtils.handleServerProcess","msg":"subprocess running","pid":22863}
+info: {"ctx":"startServerProcess","msg":"post-start-server","port":43307,"durationStartServer":620}
+debug: {"ctx":"TreeView:getChildren"}
+info: {"ctx":"TreeView:getChildren","msg":"reconstructing tree: enter"}
+info: {"ctx":"TreeView:getChildren","msg":"reconstructing tree: exit"}
+info: {"ctx":"dendron.reloadIndex:run","msg":"pre-execute"}
+info: {"ctx":"ReloadIndex.execute","msg":"enter"}
+info: {"ctx":"ReloadIndex.execute","durationEngineInit":262}
+info: {"ctx":"ReloadIndex.execute","msg":"exit"}
+info: {"ctx":"dendron.reloadIndex:run","msg":"post-execute"}
+info: {"ctx":"reloadWorkspace","msg":"post-ws.reloadWorkspace"}
+info: {"ctx":"reloadWorkspace","msg":"exit"}
+info: {"ctx":"postReloadWorkspace","msg":"same wsVersion"}
+info: {"ctx":"postReloadWorkspace","msg":"exit"}
+info: {"ctx":"setupViews","msg":"init:treeViewV2"}
+info: {"ctx":"setupBacklinkTreeView","msg":"init:backlinks"}
+info: {"ctx":"activateWorkspace","stage":"prod","msg":"enter"}
+info: {"ctx":"togglePluginActiveContext","state":"togglePluginActiveContext: true"}
+info: {"ctx":"_activate","msg":"fin startClient","durationReloadWorkspace":899}
+info: {"ctx":"showWelcomeOrWhatsNew","version":"0.95.1","previousExtensionVersion":"0.0.0"}
+info: {"ctx":"dendron.createDailyJournalNote:run","msg":"pre-execute"}
+info: {"ctx":"CreateNoteWithTraitCommand","msg":"enter","opts":{"title":"daily.journal.2022.05.21","fname":"daily.journal.2022.05.21"}}
+info: {"ctx":"getVaultForOpenEditor","msg":"no active doc"}
+info: {"ctx":"getVaultForOpenEditor","msg":"exit","vault":{"fsPath":"vault"}}
+info: {"ctx":"GotoNoteCommand","opts":{"qs":"daily.journal.2022.05.21","vault":{"fsPath":"vault"},"overrides":{"title":"2022-05-21","traits":["journalNote"]}},"msg":"enter"}
+info: {"ctx":"FileWatcher:onDidCreate","fsPath":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","msg":"paused"}
+debug: {"msg":"Note opened","fname":"daily.journal.2022.05.21"}
+info: {"ctx":"WindowWatcher:onDidChangeVisibleTextEditors","editorPaths":["/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md"]}
+info: {"ctx":"refreshBacklinksChangeActiveTextEditor"}
+info: {"ctx":"WindowWatcher:onDidChangeActiveTextEditor","editor":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md"}
+debug: {"msg":"Marking note as having opened for the first time this session","fname":"daily.journal.2022.05.21"}
+info: {"ctx":"WorkspaceWatcher:onFirstOpen","msg":"enter","fname":"daily.journal.2022.05.21"}
+info: {"ctx":"GotoNoteCommand","opts":{"qs":"daily.journal.2022.05.21","vault":{"fsPath":"vault"},"overrides":{"title":"2022-05-21","traits":["journalNote"]}},"msg":"exit"}
+info: {"ctx":"CreateNoteWithTraitCommand","msg":"exit"}
+info: {"ctx":"dendron.createDailyJournalNote:run","msg":"post-execute"}
+info: {"ctx":"WorkspaceWatcher:onFirstOpen","msg":"exit","fname":"daily.journal.2022.05.21"}
+info: {"ctx":"updateDecorations","payload":{"error":null,"decorationsLength":2,"diagnosticsLength":0}}
+debug: {"msg":"Note opened","fname":"daily.journal.2022.05.21.md.git"}
+info: sendSavedAnalytics
+info: {"ctx":"AnalyticsUtils.sendSavedAnalytics","message":"start"}
+warn: {"ctx":"AnalyticsUtils.sendSavedAnalytics","msg":"failed to read the saved telemetry dir","telemetryDir":"/home/jay/.dendron/saved-telemetry"}
+debug: {"ctx":"WindowWatcher:onDidChangeTextEditorVisibleRanges","editor":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md"}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"enter"}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"trigger change handlers"}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"exit"}
+info: {"ctx":"updateDecorations","payload":{"error":null,"decorationsLength":2,"diagnosticsLength":0}}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"enter"}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"trigger change handlers"}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"exit"}
+info: {"ctx":"updateDecorations","payload":{"error":null,"decorationsLength":2,"diagnosticsLength":0}}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"enter"}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"trigger change handlers"}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"exit"}
+info: {"ctx":"updateDecorations","payload":{"error":null,"decorationsLength":2,"diagnosticsLength":0}}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"enter"}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"trigger change handlers"}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"exit"}
+info: {"ctx":"updateDecorations","payload":{"error":null,"decorationsLength":2,"diagnosticsLength":0}}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"enter"}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"trigger change handlers"}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"exit"}
+info: {"ctx":"updateDecorations","payload":{"error":null,"decorationsLength":2,"diagnosticsLength":0}}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"enter"}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"trigger change handlers"}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"exit"}
+info: {"ctx":"updateDecorations","payload":{"error":null,"decorationsLength":2,"diagnosticsLength":0}}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"enter"}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"trigger change handlers"}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"exit"}
+info: {"ctx":"updateDecorations","payload":{"error":null,"decorationsLength":2,"diagnosticsLength":0}}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"enter"}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"trigger change handlers"}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"exit"}
+info: {"ctx":"updateDecorations","payload":{"error":null,"decorationsLength":2,"diagnosticsLength":0}}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"enter"}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"trigger change handlers"}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"exit"}
+info: {"ctx":"updateDecorations","payload":{"error":null,"decorationsLength":2,"diagnosticsLength":0}}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"enter"}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"trigger change handlers"}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"exit"}
+info: {"ctx":"updateDecorations","payload":{"error":null,"decorationsLength":2,"diagnosticsLength":0}}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"enter"}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"trigger change handlers"}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"exit"}
+info: {"ctx":"updateDecorations","payload":{"error":null,"decorationsLength":2,"diagnosticsLength":0}}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"enter"}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"trigger change handlers"}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"exit"}
+info: {"ctx":"updateDecorations","payload":{"error":null,"decorationsLength":2,"diagnosticsLength":0}}
+debug: {"ctx":"WindowWatcher:onDidChangeTextEditorVisibleRanges","editor":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md"}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"enter"}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"trigger change handlers"}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"exit"}
+info: {"ctx":"updateDecorations","payload":{"error":null,"decorationsLength":2,"diagnosticsLength":0}}
+debug: {"ctx":"WindowWatcher:onDidChangeTextEditorVisibleRanges","editor":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md"}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"enter"}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"trigger change handlers"}
+debug: {"ctx":"WorkspaceWatcher:quickOnDidChangeTextDocument","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","state":"exit"}
+info: {"ctx":"updateDecorations","payload":{"error":null,"decorationsLength":2,"diagnosticsLength":0}}
+info: {"ctx":"WorkspaceWatcher:onWillSaveTextDocument","url":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md","reason":"Manual","msg":"enter"}
+info: {"ctx":"WorkspaceWatcher:onWillSaveNote","match":["updated: 1653137974500","1653137974500"],"msg":"update activeText editor"}
+debug: {"ctx":"TextDocumentService:onDidSave","uri":"/home/jay/Documents/wise/Notes/Notes/vault/daily.journal.2022.05.21.md"}
+debug: {"ctx":"TextDocumentService:updateNoteContents","fname":"daily.journal.2022.05.21","msg":"exit"}
+info: {"ctx":"refreshBacklinksEngineNoteStateChanged"}
+info: {"ctx":"togglePluginActiveContext","state":"togglePluginActiveContext: false"}
+info: {"ctx":"WSUtils.handleServerProcess","msg":"kill server start"}
+info: {"ctx":"WSUtils.handleServerProcess","msg":"kill server end"}

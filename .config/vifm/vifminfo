@@ -1,0 +1,204 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+'H
+	/home/jay/
+	..
+1652799547
+'b
+	/home/jay/bin/
+	..
+1652799547
+'h
+	/home/jay/
+	..
+1652799547
+
+# Bookmarks:
+
+# TUI:
+ar
+q0
+v2
+ov
+m-1
+l2
+r2
+
+# Left window history (oldest to newest):
+d/home/jay/Downloads
+	..
+0
+d/home
+	jay
+1
+d/home/jay/.config
+	vifm
+30
+d/home/jay/.config/vifm
+	colors
+1
+d/home/jay/.config/vifm/colors
+	Default.vifm
+1
+d/home/jay/.config/vifm
+	scripts
+2
+d/home/jay/.config/vifm/scripts
+	..
+0
+d/home/jay/.config/vifm
+	vifmrc
+4
+d/home/jay/.config
+	update-notifier
+29
+d/home/jay/Pictures
+	7ff5aa2204c532c80dcc425080aeb1be.jpg
+1
+d/home/jay/.config
+	vifm
+30
+d/home/jay/.config/vifm
+	scripts
+2
+d/home/jay/.config
+	vifm
+30
+d/home/jay/Pictures
+	7ff5aa2204c532c80dcc425080aeb1be.jpg
+1
+d/home/jay
+	Downloads
+3
+d/home/jay/Downloads
+	..
+0
+d/home/jay
+	Documents
+2
+d/home/jay/Documents
+	SoSe2022
+2
+d/home/jay/Documents/SoSe2022
+	MLME
+1
+d/home/jay/Documents/SoSe2022/MLME
+	Lecture-1
+1
+d/home/jay/Documents/SoSe2022/MLME/Lecture-1
+	E01_MLME.zip
+2
+d/home/jay/Documents/SoSe2022/MLME
+	Lecture-1
+1
+d/home/jay/Documents/SoSe2022
+	MLME
+1
+d/home/jay/Documents
+	SoSe2022
+2
+d/home/jay
+	Documents
+2
+d/home
+	jay
+1
+d/
+	media
+11
+d/media
+	jay
+1
+d/media/jay
+	New Volume
+1
+d/media/jay/New Volume
+	The Avengers -Age Of Ultron (2015) [1080p]
+10
+d/media/jay/New Volume/The Avengers -Age Of Ultron (2015) [1080p]
+	The.Avengers.Age.Of.Ultron.2015.1080p.BluRay.x264.YIFY.mkv
+1
+d/media/jay/New Volume
+	..
+0
+d/media/jay
+	..
+0
+d/media
+	jay
+1
+d/
+	lib32
+7
+d/lib32
+	..
+0
+d/
+	lib32
+7
+d/lib32
+	..
+0
+d/
+	lib32
+7
+d
+
+# Right window history (oldest to newest):
+D/home/jay
+	.config
+3
+D/home/jay/.config
+	vifm
+21
+D/home/jay/.config/vifm
+	colors
+1
+D/home/jay/.config
+	vifm
+30
+D
+
+# Command line history (oldest to newest):
+:%s/Mars//gc
+:%s/Mars//
+:%s/Mars_Perserverance_//
+:%s/Mars_Perseverance//g
+:q
+
+# Search history (oldest to newest):
+/Mars
+/Mars_Perserverance_
+/Mars_Perseverance
+
+# Prompt history (oldest to newest):
+
+# Local filter history (oldest to newest):
+
+# Registers:
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+t/home/jay/.local/share/vifm/Trash/000_Mars_Perseverance_NLF_0129_0678403142_558ECM_N0042222NCAM03129_07_195J.png
+	/home/jay/Downloads/Mars_Perseverance_NLF_0129_0678403142_558ECM_N0042222NCAM03129_07_195J.png
+t/home/jay/.local/share/vifm/Trash/000_Mars_Perseverance_NLF_0129_0678403142_558ECM_N0042222NCAM03129_13_195J.png
+	/home/jay/Downloads/Mars_Perseverance_NLF_0129_0678403142_558ECM_N0042222NCAM03129_13_195J.png
+t/home/jay/.local/share/vifm/Trash/000_Mars_Perseverance_NLF_0129_0678403356_559ECM_N0042222NCAM03129_07_195J.png
+	/home/jay/Downloads/Mars_Perseverance_NLF_0129_0678403356_559ECM_N0042222NCAM03129_07_195J.png
+t/home/jay/.local/share/vifm/Trash/000_Mars_Perseverance_NRF_0129_0678403142_558ECM_N0042222NCAM03129_07_195J.png
+	/home/jay/Downloads/Mars_Perseverance_NRF_0129_0678403142_558ECM_N0042222NCAM03129_07_195J.png
+t/home/jay/.local/share/vifm/Trash/000_Mars_Perseverance_NRF_0129_0678403142_558ECM_N0042222NCAM03129_13_195J.png
+	/home/jay/Downloads/Mars_Perseverance_NRF_0129_0678403142_558ECM_N0042222NCAM03129_13_195J.png
+
+# State:
+f
+i1
+[.1
+[F
+F
+I1
+].0
+]F
+s0

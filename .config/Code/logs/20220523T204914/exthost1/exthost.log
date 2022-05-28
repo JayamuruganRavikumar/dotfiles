@@ -1,0 +1,35 @@
+[2022-05-23 20:49:17.855] [exthost] [info] Extension host with pid 64027 started
+[2022-05-23 20:49:17.855] [exthost] [info] Skipping acquiring lock for /home/jay/.config/Code/User/workspaceStorage/ad28bfd386a93927997a5adb466972d3.
+[2022-05-23 20:49:17.972] [exthost] [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
+[2022-05-23 20:49:17.980] [exthost] [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+[2022-05-23 20:49:18.008] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication, startup: false, activationEvent: 'onAuthenticationRequest:microsoft'
+[2022-05-23 20:49:18.026] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-05-23 20:49:18.029] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+[2022-05-23 20:49:18.032] [exthost] [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: true, activationEvent: '*'
+[2022-05-23 20:49:18.037] [exthost] [info] ExtensionService#_doActivateExtension dendron.dendron, startup: true, activationEvent: '*'
+[2022-05-23 20:49:18.546] [exthost] [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: true, activationEvent: '*'
+[2022-05-23 20:49:18.678] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-05-23 20:49:18.691] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-05-23 20:49:18.718] [exthost] [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+[2022-05-23 20:49:18.851] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+[2022-05-23 20:49:18.870] [exthost] [info] Eager extensions activated
+[2022-05-23 20:49:18.881] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-05-23 20:49:18.895] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-05-23 20:56:07.415] [exthost] [warning] TextEditor is closed/disposed
+[2022-05-23 20:56:07.415] [exthost] [warning] TextEditor is closed/disposed
+[2022-05-23 20:56:22.432] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-05-23 20:56:22.436] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-05-23 20:56:22.455] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-05-23 22:28:18.315] [exthost] [info] Extension host terminating: renderer closed the socket
+[2022-05-23 22:28:18.629] [exthost] [error] TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 't'
+    |     property '_readableState' -> object with constructor 'M'
+    |     property 'pipes' -> object with constructor 'Array'
+    |     index 0 -> object with constructor 't.ConsoleForElectron'
+    --- property 'parent' closes the circle
+    at JSON.stringify (<anonymous>)
+    at async (/home/jay/.vscode/extensions/vscodevim.vim-1.22.2/src/register/register.ts:357:16)
+    at Object.e.deactivate (/home/jay/.vscode/extensions/vscodevim.vim-1.22.2/extension.ts:64:8)
+    at async Promise.all (index 16)
+    at m._deactivateAll (/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:88:10665)
+[2022-05-23 22:28:18.629] [exthost] [info] Extension host with pid 64027 exiting with code 0
