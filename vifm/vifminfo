@@ -1,0 +1,296 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+'H
+	/home/jay/
+	..
+1669062226
+'b
+	/home/jay/bin/
+	..
+1669062226
+'h
+	/home/jay/
+	..
+1669062226
+'z
+	/home/jay/.config/vifm
+	..
+1669062226
+
+# Bookmarks:
+
+# TUI:
+al
+q1
+v2
+ov
+m-1
+l2
+r2
+
+# Left window history (oldest to newest):
+d/home/jay/Downloads/fontawesome-free-6.2.1-desktop/svgs
+	..
+0
+d/home/jay/Downloads/fontawesome-free-6.2.1-desktop/svgs
+	..
+0
+d/home/jay/Downloads/fontawesome-free-6.2.1-desktop/svgs
+	brands
+1
+d/opt/ros/foxy/share
+	dummy_map_server
+37
+d/opt/ros/foxy/share/dummy_map_server
+	environment
+2
+d/opt/ros/foxy/share/dummy_map_server/environment
+	..
+0
+d/opt/ros/foxy/share/dummy_map_server
+	environment
+2
+d/opt/ros/foxy/share
+	dummy_robot_bringup
+38
+d/opt/ros/foxy/share/dummy_robot_bringup
+	launch
+3
+d/opt/ros/foxy/share/dummy_robot_bringup/launch
+	dummy_robot_bringup.launch.py
+1
+d/opt/ros/foxy/share/dummy_robot_bringup
+	launch
+3
+d/opt/ros/foxy/share
+	kdl_parser
+47
+d/opt/ros/foxy
+	share
+6
+d/opt/ros
+	foxy
+1
+d/opt/ros/foxy
+	lib
+4
+d/opt/ros
+	foxy
+1
+d/opt
+	ros
+2
+d/
+	home
+6
+d/home
+	jay
+1
+d/home/jay
+	Documents
+2
+d/home/jay/Documents
+	ros_ws
+7
+d/home/jay/Documents/ros_ws
+	src
+4
+d/home/jay/Documents/ros_ws/src
+	turtlebot3
+3
+d/home/jay/Documents/ros_ws/src/turtlebot3
+	turtlebot3_navigation2
+6
+d/home/jay/Documents/ros_ws/src/turtlebot3/turtlebot3_navigation2
+	launch
+1
+d/home/jay/Documents/ros_ws/src/turtlebot3/turtlebot3_navigation2/launch
+	navigation2.launch.py
+1
+d/home/jay/Documents/ros_ws/src/turtlebot3/turtlebot3_navigation2
+	map
+2
+d/home/jay/Documents/ros_ws/src/turtlebot3/turtlebot3_navigation2/map
+	..
+0
+d/home/jay/Documents/ros_ws/src/turtlebot3/turtlebot3_navigation2
+	map
+2
+d/home/jay/Documents/ros_ws/src/turtlebot3
+	turtlebot3_navigation2
+6
+d/home/jay/Downloads
+	fontawesome-free-6.2.1-desktop
+1
+d/home/jay/Downloads/fontawesome-free-6.2.1-desktop
+	otfs
+2
+d/home/jay/Downloads/fontawesome-free-6.2.1-desktop/otfs
+	..
+0
+d
+
+# Right window history (oldest to newest):
+D/home/jay
+	..
+0
+D/usr
+	share
+11
+D/usr/share
+	fonts
+47
+D/usr/share/fonts
+	svg
+7
+D/usr/share/fonts/svg
+	..
+0
+D/usr/share/fonts
+	fonts-go
+5
+D/usr/share
+	fonts
+47
+D/usr
+	local
+9
+D/usr/local
+	share
+8
+D/usr/local/share
+	fonts
+4
+D/usr/local/share/fonts
+	..
+0
+D/usr/local/share
+	fonts
+4
+D/usr/local/share/fonts
+	..
+0
+D/usr/local/share
+	fonts
+4
+D/usr/local
+	share
+8
+D/usr
+	share
+11
+D/usr/share
+	fonts
+47
+D/usr/share/fonts
+	svg
+7
+D/usr/share/fonts/svg
+	font-awesome
+1
+D/usr/share/fonts/svg/font-awesome
+	..
+0
+D/usr/share/fonts/svg
+	font-awesome
+1
+D/usr/share/fonts
+	woff
+10
+D/usr/share/fonts/woff
+	..
+0
+D/usr/share/fonts
+	type1
+9
+D/usr/share/fonts/type1
+	..
+0
+D/usr/share/fonts
+	truetype
+8
+D/usr/share/fonts/truetype
+	..
+0
+D/usr/share/fonts
+	svg
+7
+D/usr/share/fonts/svg
+	font-awesome
+1
+D/usr/share/fonts/svg/font-awesome
+	..
+0
+D/usr/share/fonts/svg
+	font-awesome
+1
+D/usr/share/fonts
+	svg
+7
+D/usr/share/fonts/svg
+	font-awesome
+1
+D/usr/share/fonts
+	svg
+7
+D/usr/share/fonts/svg
+	font-awesome
+1
+D/usr/share/fonts/svg/font-awesome
+	..
+0
+D/usr/share/fonts/svg
+	font-awesome
+1
+D/opt/ros/foxy/share
+	action_tutorials_cpp
+2
+D/opt/ros/foxy
+	share
+6
+D/opt/ros
+	foxy
+1
+D/opt
+	ros
+2
+D/
+	home
+6
+D/home
+	..
+0
+D
+
+# Command line history (oldest to newest):
+:mkdir otfs
+:sudo mkdir otfs
+:kkj
+:help
+:q
+:cd ~/Downloads/
+
+# Search history (oldest to newest):
+/fonts
+
+# Prompt history (oldest to newest):
+
+# Local filter history (oldest to newest):
+
+# Registers:
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+
+# State:
+f
+i1
+[.1
+[F
+F
+I1
+].1
+]F
+s0
