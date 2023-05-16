@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-feh --bg-scale ~/Pictures/850018.png &
+feh --bg-scale ~/Pictures/gundam-execution-dh-2560x1440.jpg &
 compton --backend glx --paint-on-overlay --vsync opengl-swc &
 setxkbmap -option caps:swapescape
 setxkbmap -option altwin:ctrl_win
@@ -16,29 +16,29 @@ bat(){
 
 	if [ $batStatus = 'Charging' ]
 	then
-		batIcon=" "
+		batIcon=" "
 	else
 		case $1 in
 			[0-9]|1[0-5])
-				batIcon=" "
+				batIcon=" "
 				;;
 			1[6-9]|2[0-5])
-				batIcon=" "
+				batIcon=" "
 				;;
 			2[6-9]|3[0-9]|4[0])
-				batIcon=" "
+				batIcon=" "
 				;;
 			4[1-9]|5[0-9])
-				batIcon=" "
+				batIcon=" "
 				;;
 			6[0-9]|7[0-9]|8[0-4])
-				batIcon=" "
+				batIcon=" "
 				;;
 			8[5-0]|9[0-9])
-				batIcon=" "
+				batIcon=" "
 				;;
 			*)
-				batIcon=" "
+				batIcon=" "
 				;;
 		esac
 	fi
@@ -47,7 +47,7 @@ bat(){
 
 vol(){
 	volSP=$(amixer -D pulse sget Master | grep 'Left:' | awk -F'[][]' '{ print $2 }')
-	volume=" $volSP"
+	volume=" $volSP"
 	mute=$(amixer -D pulse sget Master | grep 'Left:' | awk -F']' '{ print $2 }')
 	if [ $mute = '[off' ]
 	then

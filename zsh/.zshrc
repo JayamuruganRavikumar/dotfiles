@@ -111,7 +111,9 @@ export LS_COLORS="$(vivid generate dracula)"
 
 function take () { mkdir -p "$@" && eval cd "\"\$$#\""; }
 
-function rosSources () { source /home/jay/Documents/ros_ws/install/setup.zsh; source /opt/ros/foxy/setup.zsh; export TURTLEBOT3_MODEL=burger; }
+function rosSources () { source /home/jay/Documents/ros_ws/install/setup.zsh; source /opt/ros/galactic/setup.zsh; export TURTLEBOT3_MODEL=burger; source  /usr/share/colcon_cd/function/colcon_cd.sh; }
+
+function omnetppPath () { export OMNETPP_PATH=~/Documents/thesis/omnetpp-5.6.2 ; export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${OMNETPP_PATH}/lib; export PATH=${PATH}:${OMNETPP_PATH}/bin; }
 
 #function gazeboPathPlugin () { export GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}:~/Documents/test/dynamic_obstacles_in_gazebo/build; }
 
@@ -127,13 +129,13 @@ alias b='cd ../'
 alias bb='cd ../../'
 alias gc='git commit -m'
 alias cl='clear'
-alias matlab='~/Documents/Programs/matlab/bin/matlab && wmname LG3D'
-alias mk='mkdir -p'
+alias matlab='wmname LG3D && /home/jay/Programs/matlab2022/bin/matlab '
+#alias mk='mkdir -p'
 alias xo='xdg-open'
 alias py="python3"
 alias brigh='xrandr --output eDP-1 --brightness'
 alias matlabDriver='export MESA_LOADER_DRIVER_OVERRIDE=i965'
-alias secondDisp='xrandr --output DP-3 --auto --right-of eDP-1'
+#alias secondDisp='xrandr --output DP-3 --auto --right-of eDP-1'
 alias notes='cd /home/jay/Documents/wise/Notes/Notes/vault'
 alias vi='nvim'
 
@@ -142,9 +144,10 @@ source "/etc/profile.d/rvm.sh"
 
 #colcon
 #source /usr/share/colcon_cd/function/colcon_cd.sh
+#source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.zsh
 #ros
-#source /opt/ros/foxy/setup.zsh
-export OMNETPP_PATH=~/Programs/omnetpp-5.6.2
-export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${OMNETPP_PATH}/lib
-export PATH=${PATH}:${OMNETPP_PATH}/bin
-
+#source /opt/ros/galactic/setup.zsh
+#source /home/jay/Documents/ros_ws/install/setup.zsh
+#export OMNETPP_PATH=~/Programs/omnetpp-5.6.2/bin
+#export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${OMNETPP_PATH}/lib
+#export PATH=${PATH}:${OMNETPP_PATH}/bin

@@ -1,24 +1,6 @@
-"---------------------------General Settings ------------------------
-
-set relativenumber
-set number
-set termguicolors
-set smartindent
-set noerrorbells
-set incsearch
-set signcolumn=no
-set tabstop=4
-set shiftwidth=4
-set smarttab
-set softtabstop=4
-set cursorline
-set conceallevel=2
-set path+=**
-set wildmenu
-syntax enable
 
 "--------------------------Plugins used -------------------------------
-
+"
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'sainnhe/gruvbox-material'
@@ -41,6 +23,26 @@ Plug 'tpope/vim-fugitive'
 "Plug 'ayu-theme/ayu-vim'
 
 call plug#end()
+
+"---------------------------General Settings ------------------------
+"
+set relativenumber
+set number
+set termguicolors
+set smartindent
+set noerrorbells
+set incsearch
+set signcolumn=no
+set tabstop=4
+set shiftwidth=4
+set smarttab
+set softtabstop=4
+set cursorline
+set conceallevel=2
+set path+=**
+set wildmenu
+syntax enable
+colorscheme gruvbox-material
 
 
 " coc configuration

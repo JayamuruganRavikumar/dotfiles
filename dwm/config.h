@@ -21,7 +21,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
+static const char *tags[] = { " ", " ", " ", " ", " ", " ", " ", "", "" };
 
 /* Audio */
 static const char *mutecmd[] = { "amixer", "-q", "-D", "pulse", "sset", "Master", "toggle"};

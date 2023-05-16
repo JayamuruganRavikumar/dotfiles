@@ -13,16 +13,12 @@
 	/home/jay/
 	..
 1669062226
-'z
-	/home/jay/.config/vifm
-	..
-1669062226
 
 # Bookmarks:
 
 # TUI:
 al
-q1
+q0
 v2
 ov
 m-1
@@ -33,12 +29,6 @@ r2
 d/home/jay/Downloads/fontawesome-free-6.2.1-desktop/svgs
 	..
 0
-d/home/jay/Downloads/fontawesome-free-6.2.1-desktop/svgs
-	..
-0
-d/home/jay/Downloads/fontawesome-free-6.2.1-desktop/svgs
-	brands
-1
 d/opt/ros/foxy/share
 	dummy_map_server
 37
@@ -129,6 +119,213 @@ d/home/jay/Downloads/fontawesome-free-6.2.1-desktop
 d/home/jay/Downloads/fontawesome-free-6.2.1-desktop/otfs
 	..
 0
+d/home/jay/Downloads
+	..
+0
+d/home/jay
+	Downloads
+29
+d/home/jay/Downloads
+	fontawesome-free-6.4.0-desktop
+1
+d/home/jay
+	JAYA
+4
+d/home/jay/JAYA
+	..
+0
+d/home/jay
+	Downloads
+3
+d/home/jay/Downloads
+	Hands-On_Machine_Learning_with_Scikit-Learn-Keras-and-TensorFlow-2nd-Edition-Aurelien-Geron_230408_211747.pdf
+2
+d/home/jay
+	Documents
+2
+d/home/jay/Documents
+	thesis
+12
+d/home/jay/Documents/thesis
+	2207.05544.pdf
+1
+d/home/jay/Documents
+	wise
+14
+d/home/jay/Documents/wise
+	..
+0
+d/home/jay/Documents
+	ubuDock
+13
+d/home/jay/Documents/ubuDock
+	..
+0
+d/home/jay/Documents
+	wise
+14
+d/home/jay/Documents/wise
+	Germna
+2
+d/home/jay/Documents/wise/Germna
+	..
+0
+d/home/jay/Documents/wise
+	Notes
+3
+d/home/jay/Documents/wise/Notes
+	AppRelated
+1
+d/home/jay/Documents/wise
+	project
+4
+d/home/jay/Documents/wise/project
+	..
+0
+d/home/jay/Documents/wise
+	project
+4
+d/home/jay/Documents
+	thesis
+12
+d/home/jay/Documents/thesis
+	2207.05544.pdf
+1
+d/home/jay/Documents
+	test
+11
+d/home/jay/Documents/test
+	dynamic_obstacles_in_gazebo
+2
+d/home/jay/Documents
+	ros_ws
+10
+d/home/jay/Documents/ros_ws
+	src
+4
+d/home/jay/Documents
+	pdf
+9
+d/home/jay/Documents/pdf
+	..
+0
+d/home/jay/Documents
+	thesis
+12
+d/home/jay/Documents/thesis
+	2207.05544.pdf
+1
+d/home/jay/Documents
+	ros_ws
+10
+d/home/jay/Documents/ros_ws
+	src
+4
+d/home/jay/Documents/ros_ws/src
+	AuNa
+1
+d/home/jay/Documents/ros_ws/src/AuNa
+	..
+0
+d/home/jay/Documents/ros_ws/src
+	turtlebot3_simulations
+2
+d/home/jay/Documents/ros_ws/src/turtlebot3_simulations
+	turtlebot3_simulations
+3
+d/home/jay/Documents/ros_ws/src/turtlebot3_simulations/turtlebot3_simulations
+	..
+0
+d/home/jay/Documents/ros_ws/src/turtlebot3_simulations
+	turtlebot3_gazebo
+2
+d/home/jay/Documents/ros_ws/src/turtlebot3_simulations/turtlebot3_gazebo
+	..
+0
+d/home/jay/Documents/ros_ws/src/turtlebot3_simulations
+	turtlebot3_gazebo
+2
+d/home/jay/Documents/ros_ws/src/turtlebot3_simulations/turtlebot3_gazebo
+	launch
+2
+d/home/jay/Documents/ros_ws/src/turtlebot3_simulations/turtlebot3_gazebo/launch
+	..
+0
+d/home/jay/Documents/ros_ws/src/turtlebot3_simulations/turtlebot3_gazebo
+	models
+3
+d/home/jay/Documents/ros_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models
+	..
+0
+d/home/jay/Documents/ros_ws/src/turtlebot3_simulations/turtlebot3_gazebo
+	models
+3
+d/home/jay/Documents/ros_ws/src/turtlebot3_simulations
+	turtlebot3_fake_node
+1
+d/home/jay/Documents/ros_ws/src/turtlebot3_simulations/turtlebot3_fake_node
+	..
+0
+d/home/jay/Documents/ros_ws/src/turtlebot3_simulations
+	turtlebot3_fake_node
+1
+d/home/jay/Documents/ros_ws/src
+	turtlebot3_simulations
+2
+d/home/jay/Documents
+	SoSe2022
+2
+d/home/jay
+	Documents
+2
+d/home/jay/Documents
+	ubuDock
+12
+d/home/jay/Documents/ubuDock
+	berlin-auslaenderbehorde-termin-bot-master
+1
+d/home/jay/Documents/ubuDock/berlin-auslaenderbehorde-termin-bot-master
+	..
+0
+d/home/jay/Documents/ubuDock
+	berlin-auslaenderbehorde-termin-bot-master
+1
+d/home/jay/Documents
+	ubuDock
+12
+d/home/jay
+	Documents
+2
+d/home/jay/Documents
+	ubuDock
+12
+d/home/jay
+	Documents
+2
+d/home
+	jay
+1
+d/
+	mnt
+13
+d/mnt
+	..
+0
+d/
+	boot
+2
+d/boot
+	efi
+1
+d/
+	home
+6
+d/home
+	jay
+1
+d/home/jay
+	Downloads
+3
 d
 
 # Right window history (oldest to newest):
@@ -259,6 +456,150 @@ D/
 	home
 6
 D/home
+	jay
+1
+D/home/jay
+	Documents
+2
+D/home/jay/Documents
+	MATLAB
+1
+D/home/jay
+	Documents
+2
+D/home/jay/Documents
+	SoSe2022
+2
+D/home/jay/Documents/SoSe2022
+	..
+0
+D/home/jay/Documents
+	SoSe2022
+2
+D/home/jay/Documents/SoSe2022
+	Mobile_Robotics
+1
+D/home/jay/Documents/SoSe2022/Mobile_Robotics
+	1_Introduction
+1
+D/home/jay/Documents/SoSe2022/Mobile_Robotics/1_Introduction
+	Mobile Robots Introduction.pdf
+2
+D/home/jay/Documents/SoSe2022/Mobile_Robotics
+	2_QROS_Intro_1
+2
+D/home/jay/Documents/SoSe2022/Mobile_Robotics/2_QROS_Intro_1
+	..
+0
+D/home/jay/Documents/SoSe2022/Mobile_Robotics
+	2_QROS_Intro_1
+2
+D/home/jay/Documents/SoSe2022/Mobile_Robotics/2_QROS_Intro_1
+	..
+0
+D/home/jay/Documents/SoSe2022/Mobile_Robotics
+	3_Robotics_System_toolbox
+3
+D/home/jay/Documents/SoSe2022/Mobile_Robotics/3_Robotics_System_toolbox
+	..
+0
+D/home/jay/Documents/SoSe2022/Mobile_Robotics
+	4_Ros_sys_toolbox_II
+4
+D/home/jay/Documents/SoSe2022/Mobile_Robotics/4_Ros_sys_toolbox_II
+	..
+0
+D/home/jay/Documents/SoSe2022/Mobile_Robotics
+	5_ros_3
+5
+D/home/jay/Documents/SoSe2022/Mobile_Robotics/5_ros_3
+	..
+0
+D/home/jay/Documents/SoSe2022/Mobile_Robotics
+	6_homing_and _path
+6
+D/home/jay/Documents/SoSe2022/Mobile_Robotics/6_homing_and _path
+	..
+0
+D/home/jay/Documents/SoSe2022/Mobile_Robotics
+	2_QROS_Intro_1
+2
+D/home/jay/Documents/SoSe2022/Mobile_Robotics/2_QROS_Intro_1
+	ROS Introduction I(1).pdf
+3
+D/home/jay/Documents/SoSe2022/Mobile_Robotics
+	2_QROS_Intro_1
+2
+D/home/jay/Documents/SoSe2022
+	Mobile_Robotics
+1
+D/home/jay/Documents
+	Zoom
+3
+D/home/jay
+	Documents
+2
+D/home/jay/Documents
+	ros_ws
+10
+D/home/jay/Documents/ros_ws
+	src
+4
+D/home/jay/Documents/ros_ws/src
+	turtlebot3_simulations
+4
+D/home/jay/Documents/ros_ws/src/turtlebot3_simulations
+	turtlebot3_gazebo
+2
+D/home/jay/Documents/ros_ws/src/turtlebot3_simulations/turtlebot3_gazebo
+	..
+0
+D/home/jay/Documents/ros_ws/src/turtlebot3_simulations
+	turtlebot3_simulations
+3
+D/home/jay/Documents/ros_ws/src/turtlebot3_simulations/turtlebot3_simulations
+	..
+0
+D/home/jay/Documents/ros_ws/src/turtlebot3_simulations
+	turtlebot3_gazebo
+2
+D/home/jay/Documents/ros_ws/src/turtlebot3_simulations/turtlebot3_gazebo
+	worlds
+6
+D/home/jay/Documents/ros_ws/src/turtlebot3_simulations/turtlebot3_gazebo/worlds
+	..
+0
+D/home/jay/Documents/ros_ws/src/turtlebot3_simulations/turtlebot3_gazebo
+	worlds
+6
+D/home/jay/Documents/ros_ws/src/turtlebot3_simulations/turtlebot3_gazebo/worlds
+	..
+0
+D/home/jay/Documents/ros_ws/src/turtlebot3_simulations/turtlebot3_gazebo
+	launch
+2
+D/home/jay/Documents/ros_ws/src/turtlebot3_simulations/turtlebot3_gazebo/launch
+	..
+0
+D/home/jay/Documents/ros_ws/src/turtlebot3_simulations/turtlebot3_gazebo
+	launch
+2
+D/home/jay/Documents/ros_ws/src/turtlebot3_simulations/turtlebot3_gazebo/launch
+	..
+0
+D/home/jay/Documents/ros_ws/src/turtlebot3_simulations/turtlebot3_gazebo
+	map.pgm
+9
+D/home/jay/Documents/ros_ws/src/turtlebot3_simulations
+	turtlebot3_gazebo
+2
+D/home/jay/Documents/ros_ws/src/turtlebot3_simulations/turtlebot3_gazebo
+	map.pgm
+9
+D/home/jay/Documents/ros_ws/src/turtlebot3_simulations
+	turtlebot3_gazebo
+2
+D/home/jay/Documents/ros_ws/src/turtlebot3_simulations/turtlebot3_gazebo
 	..
 0
 D
@@ -268,8 +609,10 @@ D
 :sudo mkdir otfs
 :kkj
 :help
-:q
 :cd ~/Downloads/
+:view
+:w
+:q
 
 # Search history (oldest to newest):
 /fonts
@@ -279,10 +622,18 @@ D
 # Local filter history (oldest to newest):
 
 # Registers:
+""/home/jay/Documents/ros_ws/src/turtlebot3_simulations/turtlebot3_gazebo/map.pgm
+""/home/jay/Documents/ros_ws/src/turtlebot3_simulations/turtlebot3_gazebo/map.yaml
 
 # Directory stack (oldest to newest):
 
 # Trash content:
+t/home/jay/.local/share/vifm/Trash/000_ROSBookchaptermain.pdf
+	/home/jay/Downloads/ROSBookchaptermain.pdf
+t/home/jay/.local/share/vifm/Trash/000_fontawesome-free-6.4.0-desktop.zip
+	/home/jay/Downloads/fontawesome-free-6.4.0-desktop.zip
+t/home/jay/.local/share/vifm/Trash/000_fontawesome-free-6.4.0-desktop
+	/home/jay/Downloads/fontawesome-free-6.4.0-desktop
 
 # State:
 f
