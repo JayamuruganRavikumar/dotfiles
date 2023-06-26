@@ -131,16 +131,17 @@ alias gc='git commit -m'
 alias cl='clear'
 alias matlab='wmname LG3D && /home/jay/Programs/matlab2022/bin/matlab '
 #alias mk='mkdir -p'
-alias xo='xdg-open'
-alias py="python3"
+#alias xo='xdg-open'
+#alias py="python3"
 alias brigh='xrandr --output eDP-1 --brightness'
-alias matlabDriver='export MESA_LOADER_DRIVER_OVERRIDE=i965'
+#alias matlabDriver='export MESA_LOADER_DRIVER_OVERRIDE=i965'
 #alias secondDisp='xrandr --output DP-3 --auto --right-of eDP-1'
 alias notes='cd /home/jay/Documents/wise/Notes/Notes/vault'
 alias vi='nvim'
+alias tmux='tmux -f ~/.config/tmux/.tmux.conf'
 
 #sources
-source "/etc/profile.d/rvm.sh"
+#source "/etc/profile.d/rvm.sh"
 
 #colcon
 #source /usr/share/colcon_cd/function/colcon_cd.sh

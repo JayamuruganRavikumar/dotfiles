@@ -13,6 +13,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'preservim/vim-markdown'
 "Plug 'tpope/vim-markdown'
 Plug 'tpope/vim-fugitive'
+Plug 'srcery-colors/srcery-vim'
 "Plug 'junegunn/fzf'
 "Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 "Plug 'vim-pandoc/vim-pandoc'

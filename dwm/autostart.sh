@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-feh --bg-scale ~/Pictures/gundam-execution-dh-2560x1440.jpg &
+feh --bg-scale ~/Pictures/546718.jpg &
 compton --backend glx --paint-on-overlay --vsync opengl-swc &
 setxkbmap -option caps:swapescape
 setxkbmap -option altwin:ctrl_win
