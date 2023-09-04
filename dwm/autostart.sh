@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-feh --bg-scale ~/Pictures/546718.jpg &
+feh --bg-scale ~/Pictures/k9TDJg6.png &
 compton --backend glx --paint-on-overlay --vsync opengl-swc &
 setxkbmap -option caps:swapescape
 setxkbmap -option altwin:ctrl_win
@@ -20,25 +20,25 @@ bat(){
 	else
 		case $1 in
 			[0-9]|1[0-5])
-				batIcon=" "
+				batIcon=" "
 				;;
 			1[6-9]|2[0-5])
-				batIcon=" "
+				batIcon=" "
 				;;
 			2[6-9]|3[0-9]|4[0])
-				batIcon=" "
+				batIcon=" "
 				;;
 			4[1-9]|5[0-9])
-				batIcon=" "
+				batIcon=" "
 				;;
 			6[0-9]|7[0-9]|8[0-4])
-				batIcon=" "
+				batIcon=" "
 				;;
 			8[5-0]|9[0-9])
-				batIcon=" "
+				batIcon=" "
 				;;
 			*)
-				batIcon=" "
+				batIcon=" "
 				;;
 		esac
 	fi
@@ -47,11 +47,11 @@ bat(){
 
 vol(){
 	volSP=$(amixer -D pulse sget Master | grep 'Left:' | awk -F'[][]' '{ print $2 }')
-	volume=" $volSP"
+	volume="  $volSP"
 	mute=$(amixer -D pulse sget Master | grep 'Left:' | awk -F']' '{ print $2 }')
 	if [ $mute = '[off' ]
 	then
-		volume="Muted  "
+		volume="Mu  "
 	fi
 		
 	echo -e "$volume"
