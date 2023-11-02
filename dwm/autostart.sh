@@ -47,11 +47,11 @@ bat(){
 
 vol(){
 	volSP=$(amixer -D pulse sget Master | grep 'Left:' | awk -F'[][]' '{ print $2 }')
-	volume="  $volSP"
+	volume=" $volSP"
 	mute=$(amixer -D pulse sget Master | grep 'Left:' | awk -F']' '{ print $2 }')
 	if [ $mute = '[off' ]
 	then
-		volume="Mu  "
+		volume="Muted  "
 	fi
 		
 	echo -e "$volume"
