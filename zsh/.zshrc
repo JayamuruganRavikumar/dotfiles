@@ -135,7 +135,7 @@ alias matlab='wmname LG3D && /home/jay/Programs/matlab/bin/matlab '
 #alias py="python3"
 alias brigh='xrandr --output eDP-1 --brightness'
 #alias matlabDriver='export MESA_LOADER_DRIVER_OVERRIDE=i965'
-#alias secondDisp='xrandr --output DP-3 --auto --right-of eDP-1'
+alias secondDisp='xrandr --output DP-3 --auto --right-of eDP-1'
 alias notes='cd /home/jay/Documents/wise/Notes/Notes/vault'
 alias vi='nvim'
 alias tmux='tmux -f ~/.config/tmux/.tmux.conf'

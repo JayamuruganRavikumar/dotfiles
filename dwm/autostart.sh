@@ -1,10 +1,11 @@
 #!/bin/zsh
 
 feh --bg-scale ~/Pictures/k9TDJg6.png &
+#feh --bg-scale --no-xinerama ~/Pictures/k9TDJg6.png &
 compton --backend glx --paint-on-overlay --vsync opengl-swc &
 setxkbmap -option caps:swapescape
 setxkbmap -option altwin:ctrl_win
-xinput set-button-map 16 3 2 1
+xinput set-button-map 12 3 2 1
 
 dte(){
 	dte="$(date +"%A, %B %d - %H:%M")"
