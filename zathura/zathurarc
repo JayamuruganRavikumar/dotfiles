@@ -1,3 +1,5 @@
+#https://github.com/dracula/zathura?tab=readme-ov-file
+#
 set window-title-basename "true"
 set selection-clipboard "clipboard"
 
