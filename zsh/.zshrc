@@ -130,6 +130,7 @@ alias bb='cd ../../'
 alias gc='git commit -m'
 alias cl='clear'
 alias matlab='wmname LG3D && /home/jay/Programs/matlab/bin/matlab '
+alias grepls='ls | grep -i'
 #alias mk='mkdir -p'
 #alias xo='xdg-open'
 #alias py="python3"

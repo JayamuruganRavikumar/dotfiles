@@ -22,8 +22,10 @@ Plug 'srcery-colors/srcery-vim'
 "vimcolorschemes.com
 "Plug 'morhetz/gruvbox'
 "Plug 'NLKNguyen/papercolor-theme'
-"Plug 'tomasr/molokai'
+Plug 'tomasr/molokai'
 "Plug 'ayu-theme/ayu-vim'
+Plug 'sainnhe/sonokai'
+Plug 'loctvl842/monokai-pro.nvim'
 
 call plug#end()
 
