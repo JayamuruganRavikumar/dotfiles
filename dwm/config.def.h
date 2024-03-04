@@ -2,12 +2,15 @@
 #include <X11/XF86keysym.h>
 
 /* appearance */
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
-static const unsigned int gappx     = 2;        /* gap pixel between windows */
+static const unsigned int borderpx  = 2;        /* border pixel of windows */
+static const unsigned int gappx     = 4;        /* gap pixel between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
-static const char *fonts[]          = { "monospace:size=10" };
+
+static const char *fonts[]          = { "Ubuntu:weight=bold:size=10:antialias=true:hinting=true",
+										"Hack:size=10:antialias=true:autohint=true",
+										"JoyPixels:size=10:antialias=true:autohint=true" };
 static const char dmenufont[]       = "monospace:size=10";
 static const char col_gray1[]       = "#282828"; /* dark gray */
 static const char col_gray2[]       = "#504945"; /* kind og gray */
@@ -16,13 +19,12 @@ static const char col_gray4[]       = "#ebdbb2"; /* gray */
 static const char col_cyan[]        = "#cc241d";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray1 },
+	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
 	[SchemeSel]  = { col_gray4, col_gray2,  col_gray2  },
 };
 
 /* tagging */
 static const char *tags[] = { " ", " ", " ", " ", " ", " ", " ", "", "" };
-
 /* Audio */
 static const char *mutecmd[] = { "amixer", "-q", "-D", "pulse", "sset", "Master", "toggle"};
 static const char *volupcmd[] = { "amixer", "-q", "set", "Master", "5%+", "unmute", NULL };
