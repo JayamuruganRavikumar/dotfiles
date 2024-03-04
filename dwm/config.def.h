@@ -8,9 +8,9 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
 
-static const char *fonts[]          = { "Ubuntu:weight=bold:size=10:antialias=true:hinting=true",
-										"Hack:size=10:antialias=true:autohint=true",
-										"JoyPixels:size=10:antialias=true:autohint=true" };
+static const char *fonts[]          = { "Ubuntu:weight=bold:size=12:antialias=true:hinting=true",
+										"Hack:size=12:antialias=true:autohint=true",
+										"JoyPixels:size=12:antialias=true:autohint=true" };
 static const char dmenufont[]       = "monospace:size=10";
 static const char col_gray1[]       = "#282828"; /* dark gray */
 static const char col_gray2[]       = "#504945"; /* kind og gray */
@@ -24,7 +24,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { " ", " ", " ", " ", " ", " ", " ", "", "" };
+static const char *tags[] = { " ", " ", " ", " ", " ", " ", " ", "", "" };
 /* Audio */
 static const char *mutecmd[] = { "amixer", "-q", "-D", "pulse", "sset", "Master", "toggle"};
 static const char *volupcmd[] = { "amixer", "-q", "set", "Master", "5%+", "unmute", NULL };

@@ -18,7 +18,10 @@ bat(){
 	if [ $batStatus = 'Charging' ]
 	then
 		batIcon=" "
-	else
+	if [ $batStatus = 'Full' ]
+	then
+		batIcon=" "
+	elif
 		case $1 in
 			[0-9]|1[0-5])
 				batIcon=" "
@@ -38,9 +41,9 @@ bat(){
 			8[5-0]|9[0-9])
 				batIcon=" "
 				;;
-			*)
-				batIcon=" "
-				;;
+#			*)
+#				batIcon=" "
+#				;;
 		esac
 	fi
 	echo -e "$batIcon$1%"
