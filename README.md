@@ -1,12 +1,12 @@
 ## Config Files
 
-Gruvbox Themed dwm
+### dwm
 
 ![](desktop.png)
 
 Basic Autostart shell script `dwm/autostart.sh` to display time, volume and charging status of the machine.
 
-Gruvbox Themed nvim
+### Nvim
 
 ![](nvim.png)
 

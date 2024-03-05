@@ -96,6 +96,7 @@ let g:mkdp_preview_options = {
     \ 'disable_filename': 0
     \ }
 " Tabularize configuration
+" Auto align for markdown tables
 
 inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
 
