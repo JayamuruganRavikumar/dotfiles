@@ -18,10 +18,11 @@ bat(){
 	if [ $batStatus = 'Charging' ]
 	then
 		batIcon=" "
-	if [ $batStatus = 'Full' ]
+	elif [ $batStatus = 'Full' ]
 	then
 		batIcon=" "
 	elif
+	then
 		case $1 in
 			[0-9]|1[0-5])
 				batIcon=" "

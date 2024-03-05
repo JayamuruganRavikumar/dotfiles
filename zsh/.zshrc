@@ -109,40 +109,44 @@ fi
 export LS_COLORS="$(vivid generate dracula)"
 #colors https://github.com/sharkdp/vivid/tree/master/themes
 
+# Cd to created folder
 function take () { mkdir -p "$@" && eval cd "\"\$$#\""; }
 
+# 
 function rosSources () { source /home/jay/Documents/ros_ws/install/setup.zsh; source /opt/ros/galactic/setup.zsh; export TURTLEBOT3_MODEL=burger; source  /usr/share/colcon_cd/function/colcon_cd.sh; }
 
-function omnetppPath () { export OMNETPP_PATH=~/Documents/thesis/omnetpp-5.6.2 ; export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${OMNETPP_PATH}/lib; export PATH=${PATH}:${OMNETPP_PATH}/bin; }
+#function gazeboPathPlugin () { export GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}:~/Documents/test/dynamic_obstacles_in_gazebo/build; } # if using custom models
 
-#function gazeboPathPlugin () { export GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}:~/Documents/test/dynamic_obstacles_in_gazebo/build; }
+# Docker commands
 
 function sshdock () { sudo docker exec -it $1 /bin/bash; }
-
 function docCommit () { sduo docker commit -m $3 $1 $2; }
-
-alias g='git'
 alias dock='sudo docker'
+
+# Alias to make life easier
+# Git
+ 
+alias g='git'
 alias ga='git add'
 alias gs='git status'
 alias b='cd ../'
-alias bb='cd ../../'
 alias gc='git commit -m'
+
+# Miscellaneous
+#
 alias cl='clear'
-alias matlab='wmname LG3D && /home/jay/Programs/matlab/bin/matlab '
-alias grepls='ls | grep -i'
+alias matlab='wmname LG3D && /home/jay/Programs/matlab/bin/matlab ' #fix rendering problem
+alias lsgrep='ls | grep -i'
 #alias mk='mkdir -p'
 #alias xo='xdg-open'
 #alias py="python3"
 alias brigh='xrandr --output eDP-1 --brightness'
-#alias matlabDriver='export MESA_LOADER_DRIVER_OVERRIDE=i965'
-alias secondDisp='xrandr --output DP-3 --auto --right-of eDP-1'
+#alias matlabDriver='export MESA_LOADER_DRIVER_OVERRIDE=i965' #fix rendering problem
+alias secondDisp='xrandr --output DP-3 --auto --right-of eDP-1; feh --bg-scale ~/Pictures/k9TDJg6.png'
 alias notes='cd /home/jay/Documents/wise/Notes/Notes/vault'
 alias vi='nvim'
 alias tmux='tmux -f ~/.config/tmux/.tmux.conf'
 
-#sources
-#source "/etc/profile.d/rvm.sh"
 
 #colcon
 #source /usr/share/colcon_cd/function/colcon_cd.sh
@@ -150,6 +154,3 @@ alias tmux='tmux -f ~/.config/tmux/.tmux.conf'
 #ros
 #source /opt/ros/galactic/setup.zsh
 #source /home/jay/Documents/ros_ws/install/setup.zsh
-#export OMNETPP_PATH=~/Programs/omnetpp-5.6.2/bin
-#export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${OMNETPP_PATH}/lib
-#export PATH=${PATH}:${OMNETPP_PATH}/bin
