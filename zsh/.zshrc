@@ -106,7 +106,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-export LS_COLORS="$(vivid generate dracula)"
+export LS_COLORS="$(vivid generate lava)"
 #colors https://github.com/sharkdp/vivid/tree/master/themes
 
 # Cd to created folder
@@ -119,9 +119,9 @@ function rosSources () { source /home/jay/Documents/ros_ws/install/setup.zsh; so
 
 # Docker commands
 
-function sshdock () { sudo docker exec -it $1 /bin/bash; }
-function docCommit () { sduo docker commit -m $3 $1 $2; }
-alias dock='sudo docker'
+#function sshdock () { sudo docker exec -it $1 /bin/bash; }
+#function docCommit () { sduo docker commit -m $3 $1 $2; }
+#alias dock='sudo docker'
 
 # Alias to make life easier
 # Git
@@ -143,7 +143,7 @@ alias lsgrep='ls | grep -i'
 alias brigh='xrandr --output eDP-1 --brightness'
 #alias matlabDriver='export MESA_LOADER_DRIVER_OVERRIDE=i965' #fix rendering problem
 alias secondDisp='xrandr --output DP-3 --auto --right-of eDP-1; feh --bg-scale ~/Pictures/k9TDJg6.png'
-alias notes='cd /home/jay/Documents/wise/Notes/Notes/vault'
+alias notes='cd /home/jay/Documents/Notes/Notes'
 alias vi='nvim'
 alias tmux='tmux -f ~/.config/tmux/.tmux.conf'
 

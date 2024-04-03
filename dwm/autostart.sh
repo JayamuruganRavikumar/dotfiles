@@ -3,7 +3,7 @@
 feh --bg-scale ~/Pictures/k9TDJg6.png &
 #feh --bg-scale --no-xinerama ~/Pictures/k9TDJg6.png &
 #compton --backend glx --paint-on-overlay --vsync opengl-swc &
-picom &
+picom --config ~/.config/picom/picom.conf --no-vsync &
 setxkbmap -option caps:swapescape
 setxkbmap -option altwin:ctrl_win
 xinput set-button-map 12 3 2 1
@@ -52,9 +52,9 @@ bat(){
 }
 
 vol(){
-	volSP=$(amixer -D pulse sget Master | grep 'Left:' | awk -F'[][]' '{ print $2 }')
+	volSP=$(amixer sget Master | grep 'Right:' | awk -F'[][]' '{ print $2 }')
 	volume=" $volSP"
-	mute=$(amixer -D pulse sget Master | grep 'Left:' | awk -F']' '{ print $2 }')
+	mute=$(amixer sget Master | grep 'Left:' | awk -F'[][]' '{ print $2 }')
 	if [ $mute = '[off' ]
 	then
 		volume="Muted  "
