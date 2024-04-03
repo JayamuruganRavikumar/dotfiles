@@ -8,7 +8,7 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
 
-static const char *fonts[]          = { "Ubuntu:weight=bold:size=12:antialias=true:hinting=true",
+static const char *fonts[]          = { "DejaVu:weight=bold:size=12:antialias=true:hinting=true",
 										"Hack:size=12:antialias=true:autohint=true",
 										"JoyPixels:size=12:antialias=true:autohint=true" };
 static const char dmenufont[]       = "monospace:size=10";
