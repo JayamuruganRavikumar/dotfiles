@@ -91,7 +91,6 @@ for km in viopp visual; do
   done
 done
 
-# alias
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -121,7 +120,7 @@ function rosSources () { source /home/jay/Documents/ros_ws/install/setup.zsh; so
 
 #function sshdock () { sudo docker exec -it $1 /bin/bash; }
 #function docCommit () { sduo docker commit -m $3 $1 $2; }
-#alias dock='sudo docker'
+alias dock='sudo docker'
 
 # Alias to make life easier
 # Git

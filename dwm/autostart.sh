@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-feh --bg-scale ~/Pictures/546718.jpg &
+feh --bg-scale ~/Pictures/gundam-execution-dh-2560x1440.jpg &
 #feh --bg-scale --no-xinerama ~/Pictures/k9TDJg6.png &
 #compton --backend glx --paint-on-overlay --vsync opengl-swc &
 picom --config ~/.config/picom/picom.conf &
