@@ -82,6 +82,8 @@ endfunction
 let g:vim_markdown_strikethrough = 1
 let g:vim_markdown_new_list_item_indent = 2
 let g:mkdp_refresh_slow = 1
+let g:mkdp_browser = 'firefox'
+let g:mkdp_theme = 'dark'
 let g:mkdp_preview_options = {
     \ 'mkit': {},
     \ 'katex': {},

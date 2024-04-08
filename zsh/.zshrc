@@ -134,7 +134,7 @@ alias gc='git commit -m'
 # Miscellaneous
 #
 alias cl='clear'
-alias matlab='wmname LG3D && /home/jay/Programs/matlab/bin/matlab ' #fix rendering problem
+#alias matlab='wmname LG3D && /home/jay/Programs/matlab/bin/matlab ' #fix rendering problem
 alias lsgrep='ls | grep -i'
 #alias mk='mkdir -p'
 #alias xo='xdg-open'
@@ -142,7 +142,7 @@ alias lsgrep='ls | grep -i'
 alias brigh='xrandr --output eDP-1 --brightness'
 #alias matlabDriver='export MESA_LOADER_DRIVER_OVERRIDE=i965' #fix rendering problem
 alias secondDisp='xrandr --output DP-3 --auto --right-of eDP-1; feh --bg-scale ~/Pictures/k9TDJg6.png'
-alias notes='cd /home/jay/Documents/Notes/Notes'
+alias notes='cd /home/jay/Documents/Notes/notes'
 alias vi='nvim'
 alias tmux='tmux -f ~/.config/tmux/.tmux.conf'
 
@@ -156,8 +156,8 @@ alias tmux='tmux -f ~/.config/tmux/.tmux.conf'
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-function condaSetup(){
-
+function condaSetup ()
+{
 __conda_setup="$('/home/jay/Programs/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)";
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
@@ -170,5 +170,4 @@ else
 fi;
 unset __conda_setup;
 }
-# <<< conda initialize <<<
 

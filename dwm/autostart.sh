@@ -6,7 +6,7 @@ feh --bg-scale ~/Pictures/gundam-execution-dh-2560x1440.jpg &
 picom --config ~/.config/picom/picom.conf &
 setxkbmap -option caps:swapescape
 setxkbmap -option altwin:ctrl_win
-xinput set-button-map 12 3 2 1
+xinput set-button-map 15 3 2 1
 
 dte(){
 	dte="$(date +"%A, %B %d - %H:%M")"
@@ -52,9 +52,9 @@ bat(){
 }
 
 vol(){
-	volSP=$(amixer sget Master | grep 'Right:' | awk -F'[][]' '{ print $2 }')
+	volSP=$(pactl get-sink-volume @DEFAULT_SINK@ | grep -Po '\d+(?=%)' | head -n 1)
 	volume=" $volSP"
-	mute=$(amixer sget Master | grep 'Left:' | awk -F'[][]' '{ print $2 }')
+	mute=$(pactl get-sink-volume @DEFAULT_SINK@ | grep -Po '\d+(?=%)' | head -n 1)
 	if [ $mute = '[off' ]
 	then
 		volume="Muted  "

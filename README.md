@@ -6,7 +6,11 @@
 
 Basic Autostart shell script `dwm/autostart.sh` to display time, volume and charging status of the machine.
 
-### Nvim
+#### Dependencies
+
+`pacman -S dmenu zathura ttf-font-awesome vifm feh ttf-dejavu ttf-liberation tmux`
+
+### Neovim
 
 ![](nvim.png)
 
@@ -19,3 +23,7 @@ Plugins used with vim plug,
 - iamcco/markdown-preview.nvim (Markdown preview)
 - ixru/nvim-markdown (Markdown)
 - tpope/vim-fugitive (Git)
+
+#### Dependencies
+
+`pacman -S nodejs npm yarn`
