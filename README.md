@@ -8,7 +8,7 @@ Basic Autostart shell script `dwm/autostart.sh` to display time, volume and char
 
 #### Dependencies
 
-`pacman -S dmenu zathura ttf-font-awesome vifm feh ttf-dejavu ttf-liberation tmux`
+`pacman -S dmenu picom zathura ttf-font-awesome vifm feh ttf-dejavu ttf-liberation tmux zsh`
 
 ### Neovim
 
