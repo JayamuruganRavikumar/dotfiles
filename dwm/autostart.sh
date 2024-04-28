@@ -1,12 +1,12 @@
 #!/bin/zsh
 
-feh --bg-scale ~/Pictures/gundam-execution-dh-2560x1440.jpg &
+feh --bg-scale ~/Pictures/mix/gruv-sushi-streets.jpg &
 #feh --bg-scale --no-xinerama ~/Pictures/k9TDJg6.png &
 #compton --backend glx --paint-on-overlay --vsync opengl-swc &
 picom --config ~/.config/picom/picom.conf &
 setxkbmap -option caps:swapescape
 setxkbmap -option altwin:ctrl_win
-xinput set-button-map 15 3 2 1
+xinput set-button-map 11 3 2 1
 
 dte(){
 	dte="$(date +"%A, %B %d - %H:%M")"

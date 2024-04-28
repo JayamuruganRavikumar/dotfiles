@@ -37,6 +37,11 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
+
+# ---------------------
+# Vim Settings
+# ---------------------
+
 # changing the cursor in vim mode
 # https://thevaluable.dev/zsh-install-configure-mouseless/
 #
@@ -108,54 +113,14 @@ fi
 export LS_COLORS="$(vivid generate lava)"
 #colors https://github.com/sharkdp/vivid/tree/master/themes
 
+# -----------------
+#  Functions  
+#  ----------------
+
 # Cd to created folder
 function take () { mkdir -p "$@" && eval cd "\"\$$#\""; }
 
-# 
-function rosSources () { source /home/jay/Documents/ros_ws/install/setup.zsh; source /opt/ros/galactic/setup.zsh; export TURTLEBOT3_MODEL=burger; source  /usr/share/colcon_cd/function/colcon_cd.sh; }
-
-#function gazeboPathPlugin () { export GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}:~/Documents/test/dynamic_obstacles_in_gazebo/build; } # if using custom models
-
-# Docker commands
-
-#function sshdock () { sudo docker exec -it $1 /bin/bash; }
-#function docCommit () { sduo docker commit -m $3 $1 $2; }
-alias dock='sudo docker'
-
-# Alias to make life easier
-# Git
- 
-alias g='git'
-alias ga='git add'
-alias gs='git status'
-alias b='cd ../'
-alias gc='git commit -m'
-
-# Miscellaneous
-#
-alias cl='clear'
-#alias matlab='wmname LG3D && /home/jay/Programs/matlab/bin/matlab ' #fix rendering problem
-alias lsgrep='ls | grep -i'
-#alias mk='mkdir -p'
-#alias xo='xdg-open'
-#alias py="python3"
-alias brigh='xrandr --output eDP-1 --brightness'
-#alias matlabDriver='export MESA_LOADER_DRIVER_OVERRIDE=i965' #fix rendering problem
-alias secondDisp='xrandr --output DP-3 --auto --right-of eDP-1; feh --bg-scale ~/Pictures/k9TDJg6.png'
-alias notes='cd /home/jay/Documents/Notes/notes'
-alias vi='nvim'
-alias tmux='tmux -f ~/.config/tmux/.tmux.conf'
-
-
-#colcon
-#source /usr/share/colcon_cd/function/colcon_cd.sh
-#source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.zsh
-#ros
-#source /opt/ros/galactic/setup.zsh
-#source /home/jay/Documents/ros_ws/install/setup.zsh
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
+#Intialize conda
 function condaSetup ()
 {
 __conda_setup="$('/home/jay/Programs/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)";
@@ -170,4 +135,35 @@ else
 fi;
 unset __conda_setup;
 }
+
+# Attach docker container
+function attachDocker () { sudo docker exec -it $1 /bin/bash; }
+
+#function gazeboPathPlugin () { export GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}:~/Documents/test/dynamic_obstacles_in_gazebo/build; } # if using custom models
+#function rosSources () { source /home/jay/Documents/ros_ws/install/setup.zsh; source /opt/ros/galactic/setup.zsh; export TURTLEBOT3_MODEL=burger; source  /usr/share/colcon_cd/function/colcon_cd.sh; }
+#
+# Docker commands
+
+#function docCommit () { sduo docker commit -m $3 $1 $2; }
+
+# --------------------------
+# Aliases
+# --------------------------
+ 
+alias g='git'
+alias ga='git add'
+alias gs='git status'
+alias b='cd ../'
+alias gc='git commit -m'
+alias cl='clear'
+#alias matlab='wmname LG3D && /home/jay/Programs/matlab/bin/matlab ' #fix rendering problem
+alias lsgrep='ls | grep -i'
+alias brigh='xrandr --output eDP-1 --brightness'
+#alias matlabDriver='export MESA_LOADER_DRIVER_OVERRIDE=i965' #fix rendering problem
+alias secondDisp='xrandr --output DP-3 --auto --right-of eDP-1; feh --bg-scale ~/Pictures/k9TDJg6.png'
+alias notes='cd /home/jay/Documents/Notes/notes'
+alias vi='nvim'
+alias tmux='tmux -f ~/.config/tmux/.tmux.conf'
+alias nvidiaWS='export ISAAC_ROS_WS=${HOME}/workspaces/isaac_ros-dev/'
+alias dock='sudo docker'
 
