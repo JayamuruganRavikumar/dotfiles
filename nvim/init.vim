@@ -9,6 +9,7 @@ Plug 'lervag/vimtex'
 Plug 'godlygeek/tabular' 
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
 Plug 'junegunn/fzf.vim'
+Plug 'https://github.com/github/copilot.vim.git'
 "Plug 'ixru/nvim-markdown'
 Plug 'preservim/vim-markdown'
 "Plug 'tpope/vim-markdown'
@@ -116,3 +117,7 @@ endfunction
 "latex configuration
 
 let g:vimtex_view_method = 'zathura'
+
+" Copilot configuration
+let g:copilot_enabled = 0
+
