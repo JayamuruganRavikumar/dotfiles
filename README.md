@@ -8,7 +8,9 @@ Basic Autostart shell script `dwm/autostart.sh` to display time, volume and char
 
 #### Dependencies
 
-`pacman -S dmenu picom zathura ttf-font-awesome vifm feh ttf-dejavu ttf-liberation tmux zsh`
+`pacman -S dmenu picom zathura ttf-font-awesome vifm feh ttf-dejavu ttf-liberation tmux zsh thunar`
+
+Install `pacman -S lxappearance` and `yay -S gruvbox-dark-gtk` to change thunar theme to gruvbox
 
 ### Neovim
 
@@ -27,6 +29,23 @@ Plugins used with vim plug,
 #### Dependencies
 
 `pacman -S nodejs npm yarn`
+
+## Creating a desktop entry
+
+- Create a dwm.desktop file at `/usr/share/xsessions/`
+- Paste the following in the file
+```conf
+[Desktop Entry]
+Encoding=UTF-8
+Name=Dwm
+Comment=Dynamic window manager
+Exec=dwm
+Icon=dwm
+Type=XSession
+```
+
+- Change the file to executalble `chmod +x dwm.desktop`
+
 
 ## Setting up the touch pad
 
