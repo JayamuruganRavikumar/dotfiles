@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-feh --bg-scale ~/Pictures/minimalistic/gruv-portal-cake.png &
+feh --bg-scale ~/Pictures/minimalistic/gruv-samurai-cyberpunk2077.png &
 #feh --bg-scale --no-xinerama ~/Pictures/k9TDJg6.png &
 #compton --backend glx --paint-on-overlay --vsync opengl-swc &
 picom --config ~/.config/picom/picom.conf &
