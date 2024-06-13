@@ -8,9 +8,7 @@ Basic Autostart shell script `dwm/autostart.sh` to display time, volume and char
 
 #### Dependencies
 
-`pacman -S dmenu picom zathura ttf-font-awesome vifm feh ttf-dejavu ttf-liberation tmux zsh thunar`
-
-Install `pacman -S lxappearance` and `yay -S gruvbox-dark-gtk` to change thunar theme to gruvbox
+`sudo apt-get install dmenu compton zathura fonts-font-awesome vifm feh tmux zsh thunar lxappearance`
 
 ### Neovim
 
@@ -28,7 +26,13 @@ Plugins used with vim plug,
 
 #### Dependencies
 
-`pacman -S nodejs npm yarn`
+Install [nodejs](https://github.com/nodesource/distributions/blob/master/README.md)  
+
+Install latest version of nvim for coc.nvim to work.
+```
+sudo add-apt-repository ppa:neovim-ppa/unstable
+sudo apt install neovim xclip
+```
 
 ## Creating a desktop entry
 
