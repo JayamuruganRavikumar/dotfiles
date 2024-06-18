@@ -157,13 +157,14 @@ alias b='cd ../'
 alias gc='git commit -m'
 alias cl='clear'
 #alias matlab='wmname LG3D && /home/jay/Programs/matlab/bin/matlab ' #fix rendering problem
-alias lsgrep='ls | grep -i'
+#alias lsgrep='ls | grep -i'
 alias brigh='xrandr --output eDP-1 --brightness'
 #alias matlabDriver='export MESA_LOADER_DRIVER_OVERRIDE=i965' #fix rendering problem
 alias secondDisp='xrandr --output DP-3 --auto --right-of eDP-1; feh --bg-scale ~/Pictures/k9TDJg6.png'
 alias notes='cd /home/jay/Documents/notes/Notes'
 alias vi='nvim'
 alias tmux='tmux -f ~/.config/tmux/.tmux.conf'
-alias nvidiaWS='export ISAAC_ROS_WS=${HOME}/workspaces/isaac_ros-dev/'
-alias dock='sudo docker'
+alias launchDocker="zsh ~/Documents/automationFiles/docker/ros.sh"
+#alias nvidiaWS='export ISAAC_ROS_WS=${HOME}/workspaces/isaac_ros-dev/'
+#alias dock='sudo docker'
 
