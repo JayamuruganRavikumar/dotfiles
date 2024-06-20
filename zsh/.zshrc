@@ -141,10 +141,6 @@ function attachDocker () { sudo docker exec -it $1 /bin/bash; }
 
 #function gazeboPathPlugin () { export GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}:~/Documents/test/dynamic_obstacles_in_gazebo/build; } # if using custom models
 #function rosSources () { source /home/jay/Documents/ros_ws/install/setup.zsh; source /opt/ros/galactic/setup.zsh; export TURTLEBOT3_MODEL=burger; source  /usr/share/colcon_cd/function/colcon_cd.sh; }
-#
-# Docker commands
-
-#function docCommit () { sduo docker commit -m $3 $1 $2; }
 
 # --------------------------
 # Aliases
@@ -156,6 +152,7 @@ alias gs='git status'
 alias b='cd ../'
 alias gc='git commit -m'
 alias cl='clear'
+alias nvidiaSmi='watch -d -n 1 nvidia-smi'
 #alias matlab='wmname LG3D && /home/jay/Programs/matlab/bin/matlab ' #fix rendering problem
 #alias lsgrep='ls | grep -i'
 alias brigh='xrandr --output eDP-1 --brightness'
@@ -165,6 +162,4 @@ alias notes='cd /home/jay/Documents/notes/Notes'
 alias vi='nvim'
 alias tmux='tmux -f ~/.config/tmux/.tmux.conf'
 alias launchDocker="zsh ~/Documents/automationFiles/docker/ros.sh"
-#alias nvidiaWS='export ISAAC_ROS_WS=${HOME}/workspaces/isaac_ros-dev/'
-#alias dock='sudo docker'
 
