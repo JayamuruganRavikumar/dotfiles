@@ -12,7 +12,7 @@ static const char *fonts[]          = { "DejaVu:weight=bold:size=12:antialias=tr
 										"Hack:size=12:antialias=true:autohint=true",
 										"JoyPixels:size=12:antialias=true:autohint=true" };
 static const char dmenufont[]       = "monospace:size=10";
-static const char col_gray1[]       = "#282828"; /* dark gray */
+static const char col_gray1[]       = "#1d2021"; /* dark gray */
 static const char col_gray2[]       = "#504945"; /* kind og gray */
 static const char col_gray3[]       = "#bdae93"; /* whitish gray */
 static const char col_gray4[]       = "#ebdbb2"; /* gray */
@@ -20,7 +20,7 @@ static const char col_cyan[]        = "#cc241d";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_gray2,  col_gray2  },
+	[SchemeSel]  = { col_gray4, col_gray2,  col_gray1  },
 };
 
 /* tagging */

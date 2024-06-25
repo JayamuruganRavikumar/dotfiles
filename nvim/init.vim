@@ -4,6 +4,7 @@
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'sainnhe/gruvbox-material'
+Plug 'morhetz/gruvbox'
 Plug 'neoclide/coc.nvim', { 'branch': 'master' }  " Auto Completion
 Plug 'lervag/vimtex'
 Plug 'godlygeek/tabular' 
@@ -120,4 +121,10 @@ let g:vimtex_view_method = 'zathura'
 
 " Copilot configuration
 let g:copilot_enabled = 0
-
+let g:copilot_filetype = {
+	  \ 'md': v:false,
+	  \ }
+let g:copilot_workspace_folders =
+	   \ ["~/Documents/docker_storage/ros-humble-nvidia"]
+imap <silent><script><expr> <C-J> copilot#Accept("\<CR>")
+let g:copilot_no_tab_map = v:true
