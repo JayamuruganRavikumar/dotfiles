@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 
-feh --bg-scale ~/Pictures/minimalistic/wp11058333.png &
+feh --bg-scale ~/Pictures/minimalistic/gruvbox_astro.jpg &
 ffplay -nodisp -autoexit /home/jay/.config/dwm/ironman_repulsor_in.mp3 &
 #feh --bg-scale --no-xinerama ~/Pictures/k9TDJg6.png &
 #compton --backend glx --paint-on-overlay --vsync opengl-swc &
