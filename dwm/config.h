@@ -99,6 +99,7 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_f,      spawn,          SHCMD("firefox -private-window") },
 	{ MODKEY|ShiftMask,             XK_t,      spawn,          SHCMD("thunar") },
 	{ MODKEY|ShiftMask,             XK_b,      spawn,          SHCMD("brave") },
+	{ MODKEY|ShiftMask,             XK_v,      spawn,          SHCMD("code") },
 	{ 0, XF86XK_AudioMute, spawn, {.v = mutecmd } },
 	{ 0, XF86XK_AudioLowerVolume, spawn, {.v = voldowncmd } },
 	{ 0, XF86XK_AudioRaiseVolume, spawn, {.v = volupcmd } },
