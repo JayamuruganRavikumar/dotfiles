@@ -60,6 +60,9 @@ let g:coc_global_extensions = [
   \ 'coc-texlab',
   \ ]
 
+"  \ 'coc-ltex',
+"
+let g:coc_filetype_map = {'tex': 'latex'}
 
 " use <tab> for trigger completion and navigate to the next complete item
 function! CheckBackspace() abort
@@ -91,7 +94,7 @@ let g:mkdp_preview_options = {
     \ 'katex': {},
     \ 'uml': {},
     \ 'maid': {},
-    \ 'disable_sync_scroll': 0,
+    \ 'disable_sync_scroll': 1,
     \ 'sync_scroll_type': 'middle',
     \ 'hide_yaml_meta': 1,
     \ 'sequence_diagrams': {},

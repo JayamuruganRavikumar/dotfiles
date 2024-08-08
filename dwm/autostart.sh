@@ -8,7 +8,7 @@ ffplay -nodisp -autoexit /home/jay/.config/dwm/ironman_repulsor_in.mp3 &
 picom --config ~/.config/picom/picom.conf &
 setxkbmap -option caps:swapescape
 setxkbmap -option altwin:ctrl_win
-xinput set-button-map 11 3 2 1
+xinput set-button-map $(xinput list | grep "USB Optical Mouse" | awk '{match($0, /[0-9]+/, m); print m[0]}') 3 2 1
 
 dte(){
 	dte="$(date +"%A, %B %d - %H:%M")"

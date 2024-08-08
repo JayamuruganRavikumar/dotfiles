@@ -137,8 +137,7 @@ unset __conda_setup;
 }
 
 # Attach docker container
-function attachDocker () { sudo docker exec -it $1 /bin/bash; }
-
+#function attachDocker () { sudo docker exec -it $1 /bin/bash; }
 #function gazeboPathPlugin () { export GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}:~/Documents/test/dynamic_obstacles_in_gazebo/build; } # if using custom models
 #function rosSources () { source /home/jay/Documents/ros_ws/install/setup.zsh; source /opt/ros/galactic/setup.zsh; export TURTLEBOT3_MODEL=burger; source  /usr/share/colcon_cd/function/colcon_cd.sh; }
 #
@@ -162,7 +161,8 @@ alias nvidiaSmi='watch -d -n 1 nvidia-smi'
 alias brigh='xrandr --output eDP-1 --brightness'
 #alias matlabDriver='export MESA_LOADER_DRIVER_OVERRIDE=i965' #fix rendering problem
 alias secondDisp='xrandr --output DP-3 --auto --right-of eDP-1'
+#alias swapMouse='xinput set-button-map $(xinput list | grep "USB Optical Mouse" | awk '{match($0, /[0-9]+/, m); print m[0]}') 3 2 1'
 alias notes='cd /home/jay/Documents/notes/Notes'
 alias vi='nvim'
 alias tmux='tmux -f ~/.config/tmux/.tmux.conf'
-alias launchDocker="zsh ~/Documents/automationFiles/docker/ros.sh"
+alias launchDocker="zsh ~/Documents/ros2_containers/ros.sh"

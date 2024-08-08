@@ -1,0 +1,11 @@
+[Added Associations]
+image/png=feh.desktop;
+video/x-matroska=vlc.desktop;
+image/jpeg=feh.desktop;
+video/mp4=vlc.desktop;
+image/svg+xml=feh.desktop;
+application/pdf=org.pwmt.zathura-pdf-mupdf.desktop;
+
+[Default Applications]
+image/jpeg=feh.desktop
+video/mp4=vlc.desktop
