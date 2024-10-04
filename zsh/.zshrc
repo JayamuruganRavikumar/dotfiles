@@ -156,6 +156,7 @@ alias b='cd ../'
 alias gc='git commit -m'
 alias cl='clear'
 alias nvidiaSmi='watch -d -n 1 nvidia-smi'
+#setxkbmap -option ctrl:swap_ralt_rctl
 #alias matlab='wmname LG3D && /home/jay/Programs/matlab/bin/matlab ' #fix rendering problem
 #alias lsgrep='ls | grep -i'
 alias brigh='xrandr --output eDP-1 --brightness'

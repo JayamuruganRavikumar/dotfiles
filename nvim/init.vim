@@ -60,9 +60,10 @@ let g:coc_global_extensions = [
   \ 'coc-texlab',
   \ ]
 
+" Spell check
 "  \ 'coc-ltex',
 "
-let g:coc_filetype_map = {'tex': 'latex'}
+"let g:coc_filetype_map = {'tex': 'latex'}
 
 " use <tab> for trigger completion and navigate to the next complete item
 function! CheckBackspace() abort
