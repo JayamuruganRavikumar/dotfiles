@@ -67,7 +67,7 @@ zle-line-init() {
 zle -N zle-keymap-select
 zle -N zle-line-init
 
-# Mapping for completion
+# Mapping for going through history in visual mode
 
 zmodload zsh/complist
 bindkey -M menuselect 'h' vi-backward-char
@@ -110,7 +110,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-export LS_COLORS="$(vivid generate lava)"
+export LS_COLORS="$(vivid generate molokai)"
 #colors https://github.com/sharkdp/vivid/tree/master/themes
 
 # -----------------
@@ -154,7 +154,6 @@ alias ga='git add'
 alias gs='git status'
 alias b='cd ../'
 alias gc='git commit -m'
-alias cl='clear'
 alias nvidiaSmi='watch -d -n 1 nvidia-smi'
 #setxkbmap -option ctrl:swap_ralt_rctl
 #alias matlab='wmname LG3D && /home/jay/Programs/matlab/bin/matlab ' #fix rendering problem
@@ -167,3 +166,4 @@ alias notes='cd /home/jay/Documents/notes/Notes'
 alias vi='nvim'
 alias tmux='tmux -f ~/.config/tmux/.tmux.conf'
 alias launchDocker="zsh ~/Documents/ros2_containers/ros.sh"
+source <(fzf --zsh)
