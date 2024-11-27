@@ -4,6 +4,7 @@
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'sainnhe/gruvbox-material'
+Plug 'lifepillar/vim-gruvbox8'
 Plug 'morhetz/gruvbox'
 Plug 'neoclide/coc.nvim', { 'branch': 'master' }  " Auto Completion
 Plug 'lervag/vimtex'
@@ -18,7 +19,7 @@ Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'srcery-colors/srcery-vim'
-"Plug 'junegunn/fzf'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 "Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 "Plug 'vim-pandoc/vim-pandoc'
 "vimcolorschemes.com
@@ -121,11 +122,12 @@ endfunction
 
 "latex configuration
 
+"    \    '-shell-escape',
 let g:vimtex_view_method = 'zathura'
 let g:vimtex_compiler_latexmk = {
     \ 'options' : [
-    \    '-shell-escape',
     \    '-verbose',
+    \    '-shell-escape',
     \    '-file-line-error',
     \    '-synctex=1',
     \    '-interaction=nonstopmode',

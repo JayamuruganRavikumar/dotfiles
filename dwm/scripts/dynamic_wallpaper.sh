@@ -10,8 +10,14 @@ for pid in $(pidof -x dynamic_wallpaper.sh); do
      fi
 done
 
-#Enter the wallpaper directory
-cd "$HOME/Pictures/irl/"
+#Enter Pictures directory
+
+cd "$HOME/Pictures"
+folders=($(ls))
+rand=($((0 + $RANDOM % 6)))
+
+#Wallpaper directory
+cd "$HOME/Pictures/$folders[$rand]/"
 
 #Get the names of all the pics in the directory
 wallpapers=($(ls))
