@@ -2,7 +2,7 @@
 
 
 #feh --bg-scale ~/Pictures/abstract/race-car-wallpapers_618078506.jpg &
-./scripts/dynamic_wallpaper.sh &
+zsh /home/jay/.config/dwm/scripts/dynamic_wallpaper.sh &
 ffplay -nodisp -autoexit /home/jay/.config/dwm/ironman_repulsor_in.mp3 &
 #feh --bg-scale --no-xinerama ~/Pictures/k9TDJg6.png &
 #compton --backend glx --paint-on-overlay --vsync opengl-swc &

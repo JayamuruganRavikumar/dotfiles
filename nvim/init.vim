@@ -40,6 +40,7 @@ set termguicolors
 set smartindent
 set noerrorbells
 set incsearch
+set autochdir
 set signcolumn=no
 set tabstop=4
 set shiftwidth=4
