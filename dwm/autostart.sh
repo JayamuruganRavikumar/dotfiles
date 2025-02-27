@@ -1,15 +1,15 @@
 #!/bin/zsh
 
 
-#feh --bg-scale ~/Pictures/abstract/race-car-wallpapers_618078506.jpg &
 zsh /home/jay/.config/dwm/scripts/dynamic_wallpaper.sh &
 ffplay -nodisp -autoexit /home/jay/.config/dwm/ironman_repulsor_in.mp3 &
-#feh --bg-scale --no-xinerama ~/Pictures/k9TDJg6.png &
 #compton --backend glx --paint-on-overlay --vsync opengl-swc &
 picom --config ~/.config/picom/picom.conf &
+dunst &
 setxkbmap -option caps:swapescape
 setxkbmap -option altwin:ctrl_win
 xinput set-button-map $(xinput list | grep "USB Optical Mouse" | awk '{match($0, /[0-9]+/, m); print m[0]}') 3 2 1
+st -t "Welcome" -e "$SHELL" -c "neofetch; exec $SHELL" &
 
 dte(){
 	dte="$(date +"%A, %B %d - %H:%M")"
@@ -71,25 +71,33 @@ batNot(){
 	batLap=$1
 	if [ $batLap -eq 90 ]
 	then
-		zenity --info --title "Battery Charged" --text "Battery Charged current level $batLap" 
+		#zenity --info --title "Battery Charged" --text "Battery Charged current level $batLap" 
+		notify-send -u normal -t 10000 "Batter Charged" "Current Battery level $batLap"
 		sleep 100s
 	elif [ $batLap -eq 25 ]
 	then
-		zenity --info --title "Battery Low" --text "Battery Low $batLap" 
+		#zenity --info --title "Battery Low" --text "Battery Low $batLap" 
+		notify-send -u low -t 10000 "Battery Low" "Current Battery level $batLap"
 		sleep 100s
 	elif [ $batLap -eq 10 ]
 	then
-		zenity --info --title "Battery Low" --text "Battery Low $batLap" 
+		#zenity --info --title "Battery Low" --text "Battery Low $batLap" 
+		notify-send -u critical -t 30000 "Battery" "Current Battery level $batLap"
 		sleep 100s
 	elif [ $batLap -eq 5 ]
 	then
-		zenity --info --title "Battery CrItICaLLY Low" --text "Battery Vey Low $batLap" 
+		#zenity --info --title "Battery CrItICaLLY Low" --text "Battery Vey Low $batLap" 
+		notify-send -u critical -t 10000 "Battery" "Current Battery level $batLap"
 	fi
+}
+
+weather(){
+	curl wttr.in/Dortmund\?format=1
 }
 
 while true; do
 	batLap=$(cat /sys/class/power_supply/BAT0/capacity)
-	xsetroot -name "| $(vol) | $(bat $batLap) | $(dte) "
+	xsetroot -name "| $(vol) | $(bat $batLap) | $(weather) | $(dte) "
 	sleep 10s
 	batNot $batLap
 done &

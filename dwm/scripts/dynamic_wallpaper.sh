@@ -14,7 +14,7 @@ done
 
 cd "$HOME/Pictures"
 folders=($(ls))
-rand=($((0 + $RANDOM % 6)))
+rand=($((1 + $RANDOM % 6)))
 
 #Wallpaper directory
 cd "$HOME/Pictures/$folders[$rand]/"
