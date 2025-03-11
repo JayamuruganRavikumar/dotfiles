@@ -1,0 +1,30 @@
+#!/bin/bash
+
+cpu_temp=$(sensors | awk '/^Package/ {print $4}' | sed 's/+//;s/\..*$//')
+gpu_temp=$(nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader)
+fan_speed=$(sensors | awk '/^fan1/ {print $2}')
+#Display only four char
+mem_usage=$(free -m | awk '/^Mem/ {print ($3)/1024}' | cut -c-4)
+ 
+case $cpu_temp in
+    "N/A") COLOR="#d8dee9" && CPU_ICON="?" ;;
+    [7-9][6-9]|[8-9][0-9]|100) COLOR="#bf616a" && cpu_icon=" " ;;  # Greater than 75
+    [6][6-9]|7[0-5]) COLOR="#ebcb8b" && cpu_icon=" " ;;            # Between 66 and 75
+    *) COLOR="#a3be8c" && cpu_icon=" ";;                          # 65 or below
+esac
+
+case $GPU_TEMP in
+    "N/A") gpu_icon="?" ;;
+    [7-9][1-9]|[8-9][0-9]|100) gpu_icon=" " ;;  # Greater than 71
+    [5][1-9]|70) gpu_icon=" " ;;                # Between 51 and 70
+    *) gpu_icon=" " ;;                          # 50 or below
+esac
+
+echo "$cpu_temp °c, $fan_speed rpm, $mem_usage GB"
+
+# Button actions
+case $BLOCK_BUTTON in 
+		1) setsid -w -f "$TERMINAL" -e htop ;;
+		3) notify-send -t 10000 -h string:bgcolor:$COLOR Stats "$cpu_temp\n\nGPU: $gpu_temp°C\n\nFan Speed: $fan_speed" ;;
+		6) setsid -f "$TERMINAL" -e "$EDITOR" "$0" ;;
+esac

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+volSP=$(pactl get-sink-volume @DEFAULT_SINK@ | grep -Po '\d+(?=%)' | head -n 1)
+volume=" $volSP"
+mute=$(pactl get-sink-volume @DEFAULT_SINK@ | grep -Po '\d+(?=%)' | head -n 1)
+if [ $mute = '[off' ]
+then
+	volume="Muted  "
+fi
+	
+echo -e "$volume"
