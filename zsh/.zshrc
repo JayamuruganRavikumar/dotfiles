@@ -2,7 +2,25 @@
 
 autoload -Uz promptinit
 promptinit
-prompt adam1
+#prompt walters
+
+#autoload -Uz vcs_info
+#precmd_vcs_info() { vcs_info }
+#precmd_functions+=( precmd_vcs_info )
+#zstyle ':vcs_info:git:*' formats ' (%b)'
+#setopt prompt_subst
+
+#local GRUVBOX_BG0="#282828"
+#local GRUVBOX_FG1="#ebdbb2"
+#local GRUVBOX_YELLOW="#d79921"
+#local GRUVBOX_BLUE="#458588"
+#local GRUVBOX_AQUA="#689d6a" 
+#local GRUVBOX_GREEN="#98971a"
+#local GRUVBOX_RED="#cc241d"
+#local GRUVBOX_ORANGE="#d65d0e"
+
+PROMPT='%B%F{#d79921}~%n@%m%f>%F{#d65d0e}%2 %F{#d65d0e}  ➜ %f%b '
+#PROMPT='%B%F{#d79921}%n@%m%f>%F{#d65d0e}%2~%f%b%F{#458588}${vcs_info_msg_0_}%f %F{#d65d0e} %f%b '
 
 setopt histignorealldups sharehistory
 
@@ -151,7 +169,7 @@ unset __conda_setup;
  
 alias g='git'
 alias ga='git add'
-alias gs='git status'
+#alias gs='git status'
 alias b='cd ../'
 alias gc='git commit -m'
 alias nvidiaSmi='watch -d -n 1 nvidia-smi'
@@ -167,3 +185,4 @@ alias vi='nvim'
 alias tmux='tmux -f ~/.config/tmux/.tmux.conf'
 alias launchDocker="zsh ~/Documents/ros2_containers/ros.sh"
 source <(fzf --zsh)
+
