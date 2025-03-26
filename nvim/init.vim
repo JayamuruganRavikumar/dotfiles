@@ -11,7 +11,7 @@ Plug 'lervag/vimtex'
 Plug 'godlygeek/tabular' 
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
 Plug 'junegunn/fzf.vim'
-Plug 'https://github.com/github/copilot.vim.git'
+"Plug 'https://github.com/github/copilot.vim.git'
 "Plug 'ixru/nvim-markdown'
 Plug 'preservim/vim-markdown'
 "Plug 'tpope/vim-markdown'
@@ -42,10 +42,13 @@ set noerrorbells
 set incsearch
 set autochdir
 set signcolumn=no
-set tabstop=4
-set shiftwidth=4
+"set tab to tow spaces for cpp 
+set tabstop=2
+set shiftwidth=2
+set autoindent
+set expandtab
 set smarttab
-set softtabstop=4
+set softtabstop=2
 set cursorline
 set conceallevel=2
 set path+=**
@@ -136,7 +139,8 @@ let g:vimtex_compiler_latexmk = {
     \}
 
 " Copilot configuration
-let g:copilot_enabled = 0
+let g:copilot_enabled = v:false
+"let g:copilot_enabled = 0
 let g:copilot_filetype = {
 	  \ 'md': v:false,
 	  \ }
@@ -144,3 +148,4 @@ let g:copilot_workspace_folders =
 	   \ ["~/Documents/docker_storage/ros-humble-nvidia"]
 imap <silent><script><expr> <C-J> copilot#Accept("\<CR>")
 let g:copilot_no_tab_map = v:true
+

@@ -14,9 +14,11 @@ then
 	case $batLap in
 		[0-9]|1[0-5])
 			batIcon=" "
+			batLevel=3
 			;;
 		1[6-9]|2[0-5])
 			batIcon=" "
+			batLevel=2
 			;;
 		2[6-9]|3[0-9]|4[0])
 			batIcon=" "
@@ -29,11 +31,34 @@ then
 			;;
 		8[5-0]|9[0-9])
 			batIcon=" "
+			batLevel=1
 			;;
 #			*)
 #				batIcon=" "
 #				;;
 	esac
 fi
+
+# TODO;
+# - Make modules
+# - Notifications for battery status
+
+#if [ $batLevel -eq 90 ]
+#then
+#	#zenity --info --title "Battery Charged" --text "Battery Charged current level $batLap" 
+#	notify-send -u normal -t 10000 "Batter Charged" "Current Battery level $batLap"
+#elif [ $batLap -eq 25 ]
+#then
+#	#zenity --info --title "Battery Low" --text "Battery Low $batLap" 
+#	notify-send -u low -t 10000 "Battery Low" "Current Battery level $batLap"
+#elif [ $batLap -eq 10 ]
+#then
+#	#zenity --info --title "Battery Low" --text "Battery Low $batLap" 
+#	notify-send -u critical -t 30000 "Battery" "Current Battery level $batLap"
+#elif [ $batLap -eq 5 ]
+#then
+#	#zenity --info --title "Battery CrItICaLLY Low" --text "Battery Vey Low $batLap" 
+#	notify-send -u critical -t 10000 "Battery" "Current Battery level $batLap"
+#fi
 
 echo -e "$batIcon$batLap%"

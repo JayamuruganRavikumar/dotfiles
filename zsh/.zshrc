@@ -19,7 +19,7 @@ promptinit
 #local GRUVBOX_RED="#cc241d"
 #local GRUVBOX_ORANGE="#d65d0e"
 
-PROMPT='%B%F{#d79921}~%n@%m%f>%F{#d65d0e}%2 %F{#d65d0e}  ➜ %f%b '
+PROMPT='%B%F{#d79921}%n@%m%f:%F{#d65d0e}%2~%f %F{#d65d0e}  ➜ %f%b '
 #PROMPT='%B%F{#d79921}%n@%m%f>%F{#d65d0e}%2~%f%b%F{#458588}${vcs_info_msg_0_}%f %F{#d65d0e} %f%b '
 
 setopt histignorealldups sharehistory

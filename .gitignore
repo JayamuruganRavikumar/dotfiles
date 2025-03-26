@@ -1,7 +1,15 @@
 zsh/.zsh_history
 zsh/.zsh_zcompdump
 zsh/.zcompdump
+dunst/*
+autostart/*
+tmux/plugins/*
+balenaEtcher/*
 nvim/plugged/*
+qutebrowser/bookmarks/*
+qutebrowser/quickmarks
+qutebrowser/greasemonkey
+google-chrome/*
 Cursor
 go
 evince

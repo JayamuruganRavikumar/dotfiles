@@ -7,9 +7,9 @@ fan_speed=$(sensors | awk '/^fan1/ {print $2}')
 mem_usage=$(free -m | awk '/^Mem/ {print ($3)/1024}' | cut -c-4)
  
 case $cpu_temp in
-    "N/A") COLOR="#d8dee9" && CPU_ICON="?" ;;
-    [7-9][6-9]|[8-9][0-9]|100) COLOR="#bf616a" && cpu_icon=" " ;;  # Greater than 75
-    [6][6-9]|7[0-5]) COLOR="#ebcb8b" && cpu_icon=" " ;;            # Between 66 and 75
+    "N/A") COLOR="#d8dee9" && cpu_icon="?" ;;
+    [7-9][6-9]|[8-9][0-9]|100) COLOR="#bf616a" && cpu_icon="" ;;  # Greater than 75
+    [6][6-9]|7[0-5]) COLOR="#ebcb8b" && cpu_icon=" " ;;            # Between 66 and 75
     *) COLOR="#a3be8c" && cpu_icon=" ";;                          # 65 or below
 esac
 
@@ -20,7 +20,8 @@ case $GPU_TEMP in
     *) gpu_icon=" " ;;                          # 50 or below
 esac
 
-echo "$cpu_temp °c, $fan_speed rpm, $mem_usage GB"
+
+echo "$cpu_icon$cpu_temp °c, $fan_speed rpm, $mem_usage GB"
 
 # Button actions
 case $BLOCK_BUTTON in 
