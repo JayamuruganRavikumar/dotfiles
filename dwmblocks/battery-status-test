@@ -1,5 +1,0 @@
-#!/bin/zsh
-
-bat_path="/sys/class/power_supply/BAT0"
-state_file="state_file"
-threshold=(90 25 15 5)
