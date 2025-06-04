@@ -1,0 +1,153 @@
+#!/bin/zsh
+
+# Script to notify battery percentage
+
+BATTERY_PATH="/sys/class/power_supply/BAT0"
+STATE_FILE="$HOME/.config/dwmblocks/state_file"
+
+CRITICAL_LEVEL=10
+LOW_LEVEL=20
+WARNING_LEVEL=30
+
+# Create a cache directory
+mkdir -p "$(dirname "$STATE_FILE")"
+
+
+# Get battery info
+get_battery_info() {
+  if [[ -f "$BATTERY_PATH/status" ]] && [[ -f "$BATTERY_PATH/capacity" ]]; then
+    local batstatus=$(cat "$BATTERY_PATH/status")
+    local capacity=$(cat "$BATTERY_PATH/capacity")
+    #echo -e "$batstatus|$capacity"
+  fi
+}
+
+# Checking if the notification was sent
+was_notified() {
+    local level=$1
+    local batstatus=$2
+    local state_key="${batstatus}_${level}"
+    
+    if [[ -f "$STATE_FILE" ]]; then
+        if grep -q "^$state_key$" "$STATE_FILE"; then
+            return 1  # Already notified
+        fi
+    fi
+    return 0  # Should notify
+}
+
+# Mark if notification was sent
+mark_notified() {
+    local level=$1
+    local batstatus=$2
+    local state_key="${batstatus}_${level}"
+    
+    # Add to state file if not already there
+    if ! grep -q "^$state_key$" "$STATE_FILE" 2>/dev/null; then
+        echo "$state_key" >> "$STATE_FILE"
+    fi
+}
+
+# Clear state for the next level
+clear_notification(){
+  local level=$1
+  local batstatus=$2
+  local state_key="${batstatus}_${level}"
+  
+  if [[ -f "$STATE_FILE" ]]; then
+    # Remove the state entry
+    grep -v "^$state_key$" "$STATE_FILE" > "$STATE_FILE.tmp" || true
+    mv "$STATE_FILE.tmp" "$STATE_FILE"
+  fi
+  
+}
+
+send_notification(){
+  local urgency=$1
+  local summary=$2
+  local body=$3
+  local timeout=$4
+  
+  notify-send -u "$urgency" -t "$timeout" -i battery "$summary" "$body"
+
+}
+
+main(){
+    # Get current battery info
+  battery_info=$(get_battery_info)
+  IFS='|' read -r batstatus capacity <<< "$battery_info"
+  #Test
+  #batstatus="Discharging"
+  #capacity=15
+  #echo "Processing $batstatus $capacity"
+  case "$batstatus" in
+    "Discharging")
+      # Clear charging notifications when unplugged
+      clear_notification "$CHARGED_LEVEL" "Charging"
+      
+      # Check critical level
+      if [[ $capacity -le $CRITICAL_LEVEL ]] && was_notified "$CRITICAL_LEVEL" "$batstatus"; then
+        send_notification "critical" "⚠️ Battery Critical!" "Battery at $capacity%! Connect charger immediately!" 0
+        mark_notified "$CRITICAL_LEVEL" "$batstatus"
+        # Also clear higher level notifications to avoid confusion
+        clear_notification "$LOW_LEVEL" "$batstatus"
+        clear_notification "$WARNING_LEVEL" "$batstatus"
+          
+      # Check low level
+      elif [[ $capacity -le $LOW_LEVEL ]] && [[ $capacity -gt $CRITICAL_LEVEL ]] && was_notified "$LOW_LEVEL" "$batstatus"; then
+        send_notification "critical" "🔋 Battery Low" "Battery at $capacity%. Please connect charger soon." 30000
+        mark_notified "$LOW_LEVEL" "$batstatus"
+        clear_notification "$WARNING_LEVEL" "$batstatus"
+          
+      # Check warning level
+      elif [[ $capacity -le $WARNING_LEVEL ]] && [[ $capacity -gt $LOW_LEVEL ]] && was_notified "$WARNING_LEVEL" "$batstatus"; then
+        send_notification "normal" "🔋 Battery Warning" "Battery at $capacity%. Consider charging." 9999
+        mark_notified "$WARNING_LEVEL" "$batstatus"
+      fi
+      
+      # Clear notifications when battery recovers
+      if [[ $capacity -gt $WARNING_LEVEL ]]; then
+        clear_notification "$WARNING_LEVEL" "$batstatus"
+      fi
+      if [[ $capacity -gt $LOW_LEVEL ]]; then
+        clear_notification "$LOW_LEVEL" "$batstatus"
+      fi
+      if [[ $capacity -gt $CRITICAL_LEVEL ]]; then
+        clear_notification "$CRITICAL_LEVEL" "$batstatus"
+      fi
+      ;;
+      
+    "Charging")
+      # Clear all discharge notifications when charging
+      clear_notification "$CRITICAL_LEVEL" "Discharging"
+      clear_notification "$LOW_LEVEL" "Discharging"
+      clear_notification "$WARNING_LEVEL" "Discharging"
+      
+      # Notify when almost fully charged
+      if [[ $capacity -ge $CHARGED_LEVEL ]] && was_notified "$CHARGED_LEVEL" "$batstatus"; then
+        send_notification "low" "🔌 Battery Charged" "Battery at $capacity%. You can unplug the charger." 10000
+        mark_notified "$CHARGED_LEVEL" "$batstatus"
+      fi
+      
+      # Clear charged notification if unplugged and re-plugged at lower level
+      if [[ $capacity -lt $((CHARGED_LEVEL - 5)) ]]; then
+        clear_notification "$CHARGED_LEVEL" "$batstatus"
+      fi
+      ;;
+      
+    "Full")
+      # Clear all notifications when full
+      clear_notification "$CHARGED_LEVEL" "Charging"
+      
+      # Optional: Notify once when fully charged
+      if was_notified "100" "$batstatus"; then
+        send_notification "low" "⚡ Battery Full" "Battery fully charged." 5000
+        mark_notified "100" "$batstatus"
+      fi
+      ;;
+  esac
+}
+
+# Run main function
+main
+

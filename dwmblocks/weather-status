@@ -1,4 +1,4 @@
 #!/bin/zsh
 # has a wierd gap Between the glyph an value, remove with cut
-echo "$(curl -s wttr.in/Dortmund\?format=1 | cut -c -6,11-)"
+echo "$(curl -s wttr.in/Dortmund\?format=1 | cut -c -6,10-)"
 
