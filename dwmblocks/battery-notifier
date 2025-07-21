@@ -5,12 +5,13 @@
 BATTERY_PATH="/sys/class/power_supply/BAT0"
 STATE_FILE="$HOME/.config/dwmblocks/state_file"
 
-CRITICAL_LEVEL=10
-LOW_LEVEL=20
-WARNING_LEVEL=30
+CRITICAL_LEVEL=15
+LOW_LEVEL=25
+WARNING_LEVEL=35
+CHARGED_LEVEL=90
 
 # Create a cache directory
-mkdir -p "$(dirname "$STATE_FILE")"
+#mkdir -p "$(dirname "$STATE_FILE")"
 
 
 # Get battery info
@@ -18,7 +19,7 @@ get_battery_info() {
   if [[ -f "$BATTERY_PATH/status" ]] && [[ -f "$BATTERY_PATH/capacity" ]]; then
     local batstatus=$(cat "$BATTERY_PATH/status")
     local capacity=$(cat "$BATTERY_PATH/capacity")
-    #echo -e "$batstatus|$capacity"
+    echo "$batstatus|$capacity"
   fi
 }
 
@@ -38,14 +39,14 @@ was_notified() {
 
 # Mark if notification was sent
 mark_notified() {
-    local level=$1
-    local batstatus=$2
-    local state_key="${batstatus}_${level}"
-    
-    # Add to state file if not already there
-    if ! grep -q "^$state_key$" "$STATE_FILE" 2>/dev/null; then
-        echo "$state_key" >> "$STATE_FILE"
-    fi
+  local level=$1
+  local batstatus=$2
+  local state_key="${batstatus}_${level}"
+  
+  # Add to state file if not already there
+  if ! grep -q "^$state_key$" "$STATE_FILE" 2>/dev/null; then
+    echo "$state_key" >> "$STATE_FILE"
+  fi
 }
 
 # Clear state for the next level
@@ -84,11 +85,13 @@ main(){
     "Discharging")
       # Clear charging notifications when unplugged
       clear_notification "$CHARGED_LEVEL" "Charging"
+      #echo "Discharging"
       
       # Check critical level
       if [[ $capacity -le $CRITICAL_LEVEL ]] && was_notified "$CRITICAL_LEVEL" "$batstatus"; then
         send_notification "critical" "⚠️ Battery Critical!" "Battery at $capacity%! Connect charger immediately!" 0
         mark_notified "$CRITICAL_LEVEL" "$batstatus"
+        #echo "marked"
         # Also clear higher level notifications to avoid confusion
         clear_notification "$LOW_LEVEL" "$batstatus"
         clear_notification "$WARNING_LEVEL" "$batstatus"

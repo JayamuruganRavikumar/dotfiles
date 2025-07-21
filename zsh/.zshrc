@@ -184,5 +184,6 @@ alias notes='cd /home/jay/Documents/notes/Notes'
 alias vi='nvim'
 alias tmux='tmux -f ~/.config/tmux/.tmux.conf'
 alias launchDocker="zsh ~/Documents/ros2_containers/ros.sh"
+alias robot_ws='cd /home/jay/Documents/docker_storage/ros-humble-nvidia/robot_ws'
 source <(fzf --zsh)
 
