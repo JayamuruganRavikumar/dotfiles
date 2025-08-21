@@ -12,11 +12,6 @@ Wallpapers from [Gruvbox Wallpapers](https://github.com/AngelJumbo/gruvbox-wallp
 
 Install `pacman -S lxappearance` and `yay -S gruvbox-dark-gtk` to change thunar theme to gruvbox
 
-#### dwm blocks
-
-- Displays weather, time, CPU temperature, RAM usage and fan rpm.
-- Norification for battery when it drops below 30 % or fully charged
-
 ### Neovim
 
 ![](nvim.png)
