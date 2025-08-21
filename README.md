@@ -4,6 +4,8 @@
 
 ![](desktop.png)
 
+Wallpapers from [Gruvbox Wallpapers](https://github.com/AngelJumbo/gruvbox-wallpapers) use the dynamic_wallpaper.sh in scripts to change wallpapers dynamically and a radom theme each time the computer starts.
+
 #### Dependencies
 
 `pacman -S dmenu picom zathura ttf-font-awesome vifm feh ttf-dejavu ttf-liberation tmux zsh thunar`
