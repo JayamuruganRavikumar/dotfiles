@@ -4,13 +4,16 @@
 
 ![](desktop.png)
 
-Basic Autostart shell script `dwm/autostart.sh` to display time, volume and charging status of the machine.
-
 #### Dependencies
 
 `pacman -S dmenu picom zathura ttf-font-awesome vifm feh ttf-dejavu ttf-liberation tmux zsh thunar`
 
 Install `pacman -S lxappearance` and `yay -S gruvbox-dark-gtk` to change thunar theme to gruvbox
+
+#### dwm blocks
+
+- Displays weather, time, CPU temperature, RAM usage and fan rpm.
+- Norification for battery when it drops below 30 % or fully charged
 
 ### Neovim
 
